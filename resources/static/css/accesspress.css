@@ -1,0 +1,73 @@
+/* AccessPress Social Counter LESS */
+.apsc-each-profile {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: flex-end;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    height: 80px;
+    line-height: 80px;
+    padding: 0;
+    overflow: hidden;
+    margin-bottom: 10px;
+    margin-top: 0;
+}
+.apsc-each-profile a {
+    width: 100%;
+    color: #24272e;
+    padding: 0 0 0 80px;
+}
+.apsc-each-profile a:hover {
+    opacity: 0.8;
+}
+.apsc-each-profile .apsc-inner-block {
+    border-left: 1px solid #ffffff;
+    background: #ffffff;
+}
+.ds .apsc-each-profile .apsc-inner-block {
+    border-left: 1px solid #13182a;
+}
+.apsc-each-profile .apsc-inner-block .social-icon i {
+    position: absolute;
+    left: 32px;
+    top: 30px;
+    color: #ffffff;
+}
+.apsc-each-profile .apsc-inner-block .social-icon .media-name {
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    padding-left: 15px;
+    color: #24272e;
+    padding-right: 10px;
+}
+.apsc-each-profile .apsc-inner-block .apsc-count,
+.apsc-each-profile .apsc-inner-block .apsc-media-type {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+    color: #7f7f7f;
+}
+.apsc-each-profile .apsc-inner-block .apsc-count {
+    padding-right: 5px;
+}
+.apsc-each-profile .apsc-facebook-icon {
+    background-color: #00abef;
+}
+.apsc-each-profile .apsc-twitter-icon {
+    background-color: #507cbe;
+}
+.apsc-each-profile .apsc-google-plus-icon {
+    background-color: #d93e2d;
+}
+.apsc-each-profile .apsc-youtube-icon {
+    background-color: #d01501;
+}
+.apsc-each-profile .apsc-instagram-icon {
+    background-color: #c8286a;
+}

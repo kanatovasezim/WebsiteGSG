@@ -1,0 +1,140 @@
+<html lang="en"
+      class="wow-animation"
+      xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<div th:fragment="upperNavbar">
+    <header class="header-desktop">
+        <div class="section__content section__content--p30">
+            <div class="container-fluid">
+                <div class="header-wrap">
+                    <form class="form-header" action="" method="POST">
+                        <!--                        <input class="au-input au-input&#45;&#45;xl" type="text" name="search"-->
+                        <!--                               placeholder="Введите название"/>-->
+                        <!--                        <button class="au-btn&#45;&#45;submit" type="submit">-->
+                        <!--                            <i class="zmdi zmdi-search"></i>-->
+                        <!--                        </button>-->
+                    </form>
+                    <div class="header-button">
+                        <div class="noti-wrap">
+                            <div class="noti__item js-item-menu">
+                                <i class="zmdi zmdi-comment-more"></i>
+                                <span id="commentCount" class="quantity">0</span>
+                                <div class="mess-dropdown js-dropdown">
+                                    <!--                                    <div class="mess__title">-->
+                                    <!--                                        <p>You have 2 news message</p>-->
+                                    <!--                                    </div>-->
+                                    <div th:each="comment : ${commentList}"
+                                         th:if="${!comment.isOpen&&comment.user.id!=user.id}">
+                                        <a th:href="@{'/comment/'+${comment.clientTask.id}+'/list'}">
+                                            <div class="mess__item">
+                                                <div class="image img-cir img-40">
+                                                    <img th:src="${comment.user.image} ?'/images/'+ ${comment.user.image} : ${@environment.getProperty('photo.default.name')}"
+                                                         alt="User"/>
+                                                </div>
+                                                <div class="content">
+                                                    <h6 th:text="${comment.user.firstName}"></h6>
+                                                    <p th:text="${comment.commentText}"></p>
+                                                    <span class="date" th:text="${comment.createdDate}"></span>
+
+                                                    <script th:inline="javascript">
+                                                        function updateComment(clientTaskId) {
+                                                            var clientTaskId = [[${comment.clientTask.id}]];
+                                                            $.ajax({
+                                                                type: "GET",
+                                                                contentType: "application/json",
+                                                                url: "/rest/comment/" + clientTaskId + "/countByRole",
+                                                                dataType: 'json',
+                                                                success: function (data) {
+                                                                    if (data.count > 0) {
+                                                                        $("#commentCount").text(data.count);
+                                                                    }
+                                                                    setTimeout(updateComment, 10000);
+                                                                },
+                                                                error: function () {
+                                                                    setTimeout(updateComment, 10000);
+                                                                }
+                                                            });
+                                                        }
+
+                                                        updateComment();
+                                                    </script>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="noti__item js-item-menu">
+                                <i class="zmdi zmdi-notifications"></i>
+                                <span id="notificationCount" class="quantity">0</span>
+                                <div class="notifi-dropdown js-dropdown">
+                                    <!--                                    <div class="notifi__title" >-->
+                                    <!--                                        <p>У Вас-->
+                                    <!--                                        <span id="notificationCount" th:text="${}">0</span> новых уведомлений-->
+                                    <!--                                        </p>-->
+                                    <!--                                    </div>-->
+                                    <div th:each="notification : ${notificationList}"
+                                         th:if="${!notification.isOpen}">
+                                        <a th:href="@{'/client/notification/'+${notification.id}}">
+                                            <div class="notifi__item">
+                                                <div class="bg-c1 img-cir img-40">
+                                                    <i class="zmdi zmdi-email-open"></i>
+                                                </div>
+                                                <div class="content">
+                                                    <h6 th:text="${notification.userFrom.firstName}"></h6>
+                                                    <p th:text="${notification.message}"></p>
+                                                    <span class="date" th:text="${notification.createdDate}"></span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="notifi__footer">
+                                        <a href="/notification/list">Все уведомления</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="account-wrap">
+                            <div class="account-item clearfix js-item-menu">
+                                <div class="image">
+                                    <img th:src=" ${user.image} ? '/images/'+ ${user.image} : ${@environment.getProperty('photo.default.name')}"
+                                         class="img-fluid" alt="User"/>
+                                </div>
+                                <div class="content">
+                                    <a class="js-acc-btn" href="#" th:text="${user.firstName+' '+user.lastName}"></a>
+                                </div>
+                                <div class="account-dropdown js-dropdown">
+                                    <div class="info clearfix">
+                                        <div class="image">
+                                            <a href="#">
+                                                <img th:src=" ${user.image} ? '/images/'+ ${user.image} : ${@environment.getProperty('photo.default.name')}"
+                                                     class="img-fluid" alt="User"/>
+                                            </a>
+                                        </div>
+                                        <div class="content">
+                                            <h5 class="name" th:text="${user.firstName+' '+user.lastName}">
+                                                <a href="#"></a>
+                                            </h5>
+                                            <span th:text="${user.email}"></span>
+                                        </div>
+                                    </div>
+                                    <div class="account-dropdown__body">
+                                        <div class="account-dropdown__item">
+                                            <a th:href="'/user/profile/' + ${user.id}">
+                                                <i class="zmdi zmdi-account"></i>Профиль</a>
+                                        </div>
+                                    </div>
+                                    <div class="account-dropdown__footer">
+                                        <a href="/logout">
+                                            <i class="zmdi zmdi-power"></i>Выход</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+</div>
+</html>

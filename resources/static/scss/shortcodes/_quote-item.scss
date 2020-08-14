@@ -1,0 +1,60 @@
+.quote-item {
+  text-align: center;
+  border: none;
+  padding: 20px 0;
+  h5{
+    margin-top: 27px;
+    margin-bottom: 0;
+  }
+  @media (max-width: 575px) {
+    h5{
+      font-size: 27px;
+    }
+  }
+  @media (min-width: 768px) {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 70%;
+  }
+}
+
+.quote-image {
+  position: relative;
+  display: inline-block;
+
+  img {
+    border-radius: 50%;
+    width: 100px;
+  }
+  //testimonial author
+  & + p {
+    margin: 30px 0 20px;
+  }
+
+}
+
+.blockqoute-meta {
+  color: #ff493c;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 0.2em;
+  display: block;
+  margin-top: 0;
+  margin-bottom: 7px;
+}
+
+.blockqoute-content {
+  font-style: italic;
+  font-weight: bold;
+  line-height: 30px;
+  font-size: 20px;
+  color: #989898;
+}
+
+@media (min-width: 992px) {
+  .testimonials .blockqoute-content {
+    max-width: 720px;
+    margin: 0 auto;
+  }
+}

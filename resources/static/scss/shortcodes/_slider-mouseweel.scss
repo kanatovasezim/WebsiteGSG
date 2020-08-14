@@ -1,0 +1,89 @@
+.author-bio-shortcode {
+  text-align: center;
+  .author-bio-word{
+    position: absolute;
+    width: 100%;
+    top: -50%;
+    transform: translateY(-50%);
+    font-size: 240px;
+    text-transform: uppercase;
+    font-weight: 900;
+    color: #242d3c;
+    opacity: 0.3;
+    left: -82px;
+
+    @media (max-width: 768px) {
+      font-size: 120px;
+    }
+
+    @media (max-width: 480px) {
+      font-size: 80px;
+    }
+  }
+  .bio-text {
+    font-size: 24px;
+    line-height: 40px;
+    max-width: 540px;
+    margin: 0 auto;
+    color: #FFFFFF;
+  }
+  .owl-loaded {
+    display: block;
+    margin-bottom: 30px;
+  }
+
+  .owl-carousel-slider {
+    transition: left 0.5s ease;
+    position: relative;
+    margin-top: 69px;
+    transform: translateX(50%);
+  }
+
+  .ui-slider-handle{
+    display: none;
+  }
+
+  .author-bio-flex{
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+
+    .year-label {
+      transition: color 0.5s ease;
+      color: #fff;
+      font-size: 14px;
+      font-weight: bold;
+      letter-spacing: 0.2em;
+      margin-top: -6px;
+    }
+
+    &:first-child {
+      margin-left: -15px;
+      margin-right: -15px;
+
+      span {
+        transition: background-color 0.5s ease;
+        margin-top: -10px;
+        cursor: pointer;
+        display: block;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background-color: $darkgreyColor;
+        border: 2px solid $colorMain2;
+
+        &.active {
+          background-color: $colorMain2;
+        }
+      }
+
+      & + div {
+        margin-left: -1em;
+        margin-right: -1em;
+        position: relative;
+        top: -60px;
+      }
+    }
+  }
+}

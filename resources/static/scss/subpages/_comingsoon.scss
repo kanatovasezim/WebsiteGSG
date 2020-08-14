@@ -1,0 +1,44 @@
+.soon{
+  background-image: url("../images/404/img_404.jpg");
+  background-position: 25% 9%;
+  background-repeat: no-repeat;
+
+  .special-heading{
+    font-size: 80px;
+    text-transform: uppercase;
+
+    & + p {
+      font-size: 30px;
+      color: #fff;
+    }
+
+    @media (max-width: 768px) {
+      font-size: 40px;
+      & + p{
+        font-size: 14px;
+      }
+    }
+  }
+  & + .page_title{
+    .widget.widget_mailchimp{
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+    @media (max-width: 991px){
+      h2{
+        font-size: 30px;
+        margin-top: 20px;
+      }
+    }
+    @media (max-width: 768px) {
+      .widget.widget_mailchimp{
+        padding-top: 0;
+      }
+    }
+    @media (max-width: 575px) {
+      h2{
+        margin-bottom: 0;
+      }
+    }
+  }
+}

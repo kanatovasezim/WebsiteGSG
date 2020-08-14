@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<layout:html xmlns:th="http://www.thymeleaf.org"
+             xmlns:layout="http://www.w3.org/1999/xhtml" lang="en"
+             layout:decorate="~{layout}">
+    <div layout:fragment="content">
+        <div class="main-content">
+            <div class="section__content section__content--p30">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="overview-wrap">
+                                <h2 class="title-1">Рассылка</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <p class="mail-message">Для того, чтобы отправить сообщение, надо выбрать получателя</p>
+                        <form th:action="${userList.size() > 1} ? '/mail/sendMailUser/' : '/mail/sendMailUser/'+${userList.get(0).getEmail()}" th:object="${mail}" method="post">
+                            <div class="mail1">
+                                <div class="form-group" th:if="${userList.size() > 1}">
+<!--                                    th:classappend="${#fields.hasErrors('to')}? 'has-error':''"-->
+<!--                                    <select type="hidden" th:if="${userList.size() > 1}" class="form-control" th:field="*{to}" multiple="multiple">-->
+<!--                                        <option th:each="e : ${userList}"-->
+<!--                                                th:value="${e.email}" th:text="${e.firstName}"></option>-->
+<!--                                    </select>-->
+
+                                    <label class="control-label">Массовая рассылка</label>
+                                    <br>
+                                    <input type="checkbox" class="form-check-input" name="active" th:checked="*{active}" id="activeCheck1">
+                                    <label class="form-check-label" for="activeCheck1">Активным пользователям</label>
+                                    <br>
+                                    <input type="checkbox" class="form-check-input" name="nonActive" th:checked="*{nonActive}" id="activeCheck2">
+                                    <label class="form-check-label" for="activeCheck2">Неактивным пользователям</label>
+
+<!--                                    <p class="error-message"-->
+<!--                                       th:each="error: ${#fields.errors('to')}"-->
+<!--                                       th:text="${error}">Validation error</p>-->
+                                </div>
+                                <div class="form-group"
+                                     th:classappend="${#fields.hasErrors('subject')}? 'has-error':''">
+                                    <label for="subject" class="control-label">Тема</label> <input
+                                        id="subject" class="form-control" th:field="*{subject}"/>
+                                    <p class="error-message"
+                                       th:each="error : ${#fields.errors('subject')}"
+                                       th:text="${error}">Validation error</p>
+                                </div>
+                                <div class="form-group"
+                                     th:classappend="${#fields.hasErrors('message')}? 'has-error':''">
+                                    <label for="message" class="control-label">Текст</label>
+                                    <textarea id="message" class="form-control" th:field="*{message}"/>
+                                    <p class="error-message"
+                                       th:each="error : ${#fields.errors('message')}"
+                                       th:text="${error}">Validation error</p>
+                                </div>
+                                <div class="form-group">
+                                    <button type="submit" class="btn au-btn--blue2" style="color: aliceblue">Отправить
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</layout:html>

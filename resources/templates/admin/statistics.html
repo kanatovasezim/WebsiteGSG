@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<layout:html xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.w3.org/1999/xhtml"
+             xmlns:sec="http://www.w3.org/1999/xhtml" lang="en"
+             layout:decorate="~{layout}">
+    <div layout:fragment="content">
+        <div class="main-content">
+            <section class="statistic">
+                <div class="section__content section__content--p30">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="overview-wrap">
+                                    <h2 class="title-1">Общая ведомость</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row m-t-25">
+                            <div class="col-sm-6 col-lg-3">
+                                <div class="overview-item overview-item--c1">
+                                    <div class="overview__inner">
+                                        <div class="overview-box clearfix">
+                                            <div class="icon">
+                                                <i class="zmdi zmdi-account-o"></i>
+                                            </div>
+                                            <div class="text">
+                                                <h2 th:text="${userCount}"></h2>
+                                            </div><br>
+                                            <div class="text" th:switch="${userCount}">
+                                                <span th:case="0">никто не в сети</span>
+                                                <span th:case="1">пользователь в сети</span>
+                                                <span th:case="*">пользователей в сети</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-lg-3">
+                                <div class="overview-item overview-item--c1">
+                                    <div class="overview__inner">
+                                        <div class="overview-box clearfix">
+                                            <div class="icon">
+                                                <i class="zmdi zmdi-account-o"></i>
+                                            </div>
+                                            <div class="text">
+                                                <h2 th:text="${emplCount}"></h2>
+                                            </div>
+                                            <div class="text" th:switch="${emplCount}">
+                                                <span th:case="0">никто не в сети</span>
+                                                <span th:case="1">работник в сети</span>
+                                                <span th:case="*"работников в сети</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-lg-3">
+                                <div class="overview-item overview-item--c2">
+                                    <div class="overview__inner">
+                                        <div class="overview-box clearfix">
+                                            <div class="icon">
+                                                <i class="zmdi zmdi-chart"></i>
+                                            </div>
+                                            <div class="text">
+                                                <h2 th:text="${totalUserCountWeek}"></h2>
+                                            </div>
+                                            <div class="text" th:switch="${totalUserCountWeek}">
+                                                <span th:case="1">уведомление за неделю</span>
+                                                <span th:case="*">уведомлений за неделю</span>
+                                            </div>
+                                        </div>
+                                        <div class="overview-chart">
+                                            <canvas id="widgetChart1"></canvas>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <script th:inline="javascript">
+        var dow = [[${dayOfWeek}]];
+        var userCount = [[${userCountDOW}]];
+    </script>
+</layout:html>
