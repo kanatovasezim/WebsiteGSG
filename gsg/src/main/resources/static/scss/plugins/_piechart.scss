@@ -1,0 +1,51 @@
+/*
+** Easy pieChart
+*/
+
+.chart {
+  position: relative;
+  display: inline-block;
+  min-height: 150px;
+  min-width: 150px;
+  margin-bottom: 10px;
+  text-align: center;
+
+  .chart-meta {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+
+    strong {
+      font-family: 'Raleway', sans-serif;
+      font-weight: 700;
+    }
+
+    .title{
+      margin-top: 2px;
+      font-size: 20px;
+      font-weight: 400;
+      text-transform: none;
+      color: #989898;
+    }
+  }
+}
+
+.percent {
+  font-family: 'Poppins', sans-serif;
+  display: inline-block;
+  font-size: 62px;
+  font-weight: 900;
+  z-index: 2;
+}
+
+.percent:after {
+  content: '%';
+}
+
+.angular {
+  margin-top: 100px;
+  .chart {
+    margin-top: 0;
+  }
+}

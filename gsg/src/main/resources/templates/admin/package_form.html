@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<layout:html xmlns:layout="http://www.w3.org/1999/xhtml"
+             xmlns:th="http://www.thymeleaf.org"
+             lang="en"
+             layout:decorate="~{layout}">
+    <div layout:fragment="content">
+        <div class="main-content">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h3 style="text-align: center; font-family: 'Gilroy Light', sans-serif"
+                        th:text="${add} ? 'Добавить пакет' : 'Редактировать пакет'">
+                    <span class="iconify"
+                          data-inline="false"
+                          data-icon="gridicons:list-ordered"
+                          style="color: #2b3b55;font-size: 50px; margin-right: 30px"></span>
+                        Добавить новый пакет</h3>
+                </div>
+            </div>
+            <form action="#" class="needs-valid"
+                  th:action="${add} ? '/package/create/' : '/package/update/' + ${package.id}" method="post" novalidate>
+                <div class="form-group">
+                    <label for="packageNameInput">Название пакета</label>
+                    <input th:value="${add} ? '' : ${package.title}" type="text" name="title" class="form-control"
+                           id="packageNameInput" placeholder="Введите название" minlength="2" maxlength="50" required>
+                    <div class="valid-feedback">
+                        Подходит!
+                    </div>
+                    <div class="invalid-feedback">
+                        Пожалуйста, введите правильные данные!
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="packageDescInput">Описание пакета</label>
+                    <input th:value="${add} ? '' : ${package.description}" type="text" name="description"
+                           class="form-control" id="packageDescInput" placeholder="Введите описание" minlength="10"
+                           maxlength="500" required>
+                    <div class="valid-feedback">
+                        Подходит!
+                    </div>
+                    <div class="invalid-feedback">
+                        Пожалуйста, введите правильные данные!
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="packagePriceInput">Цена пакета</label>
+                    <input th:value="${add} ? '' : ${package.price}" type="number" name="price"
+                           class="form-control" id="packagePriceInput" placeholder="Введите цену" minlength="1"
+                           maxlength="20" required>
+                    <div class="valid-feedback">
+                        Подходит!
+                    </div>
+                    <div class="invalid-feedback">
+                        Пожалуйста, введите правильные данные!
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="packageDisPriceInput">Скидочная цена</label>
+                    <input th:value="${add} ? '' : ${package.discountPrice}" type="number" name="discountPrice"
+                           class="form-control" id="packageDisPriceInput" placeholder="Введите скидочную цену">
+                    <div class="valid-feedback">
+                        Подходит!
+                    </div>
+                    <div class="invalid-feedback">
+                        Пожалуйста, введите правильные данные!
+                    </div>
+                </div>
+                <button type="submit" class="btn au-btn--blue2" style="color: aliceblue">Отправить</button>
+            </form>
+        </div>
+    </div>
+</layout:html>

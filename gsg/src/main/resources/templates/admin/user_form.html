@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<layout:html xmlns:layout="http://www.w3.org/1999/xhtml"
+             xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.w3.org/1999/xhtml"
+             lang="en"
+             layout:decorate="~{layout}">
+    <div layout:fragment="content">
+        <div class="main-content">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h3 style="text-align: center; font-family: 'Gilroy Light', sans-serif"
+                        th:text="${add} ? 'Добавить пользователя' : 'Редактировать пользователя'">
+                    <span class="iconify"
+                          data-inline="false"
+                          data-icon="gridicons:list-ordered"
+                          style="color: #2b3b55;font-size: 50px; margin-right: 30px"></span>
+                    </h3>
+                </div>
+            </div>
+            <form action="#"  enctype="multipart/form-data" class="needs-valid"
+                  th:action="${add} ? '/user/create/' : '/user/update/' + ${userProfile.id}"
+                  method="post">
+                <div class="form-group">
+                    <label class="text-dark font-bold col-form-label">Аватарка</label>
+                    <div class="wrapper">
+                        <div class="box">
+                            <div class="js--image-preview"></div>
+                            <div class="upload-options">
+                                <label>
+                                    <input type="file" name="docs" class="image-upload" alt=""/>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <script th:if="${!add}" th:inline="javascript">
+                        var image = /*[[${userProfile.image}]]*/ null;
+                        if (image != null) {
+                            var thumb = document.querySelector('.js--image-preview');
+                            thumb.style.backgroundImage = 'url(' + image + ')';
+                            thumb.className += ' js--no-default';
+                        }
+                    </script>
+                </div>
+                <div class="form-group">
+                    <label for="emailInput">Почта</label>
+                    <input th:value="${add} ? '' : ${userProfile.email}" type="email" name="email" class="form-control"
+                           id="emailInput" aria-describedby="emailHelp" placeholder="Введите почту" required>
+                    <div class="valid-feedback">
+                        Подходит!
+                    </div>
+                    <div class="invalid-feedback">
+                        Пожалуйста, введите правильные данные!
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="passwordInput">Пароль</label>
+                    <input type="password" name="password" class="form-control" id="passwordInput"
+                           aria-describedby="passwordHelp" placeholder="Введите пароль" minlength="5" maxlength="20"
+                           th:required="${add} ? 'required' : null">
+                    <div class="valid-feedback">
+                        Подходит!
+                    </div>
+                    <div class="invalid-feedback">
+                        Пожалуйста, введите правильные данные!
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="firstNameInput">Имя</label>
+                    <input th:value="${add} ? '' : ${userProfile.firstName}" type="text" name="firstName"
+                           class="form-control"
+                           id="firstNameInput" aria-describedby="firstNameHelp" placeholder="Введите имя" minlength="2"
+                           maxlength="20" required>
+                    <div class="valid-feedback">
+                        Подходит!
+                    </div>
+                    <div class="invalid-feedback">
+                        Пожалуйста, введите правильные данные!
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="lastNameInput">Фамилия</label>
+                    <input th:value="${add} ? '' : ${userProfile.lastName}" type="text" name="lastName"
+                           class="form-control"
+                           id="lastNameInput" aria-describedby="lastNameHelp" placeholder="Введите фамилию"
+                           minlength="2"
+                           maxlength="30" required>
+                    <div class="valid-feedback">
+                        Подходит!
+                    </div>
+                    <div class="invalid-feedback">
+                        Пожалуйста, введите правильные данные!
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="patronymicInput">Отчество</label>
+                    <input th:value="${add} ? '' : ${userProfile.patronymic}" type="text" name="patronymic"
+                           class="form-control"
+                           id="patronymicInput" aria-describedby="patronymicHelp" placeholder="Введите отчество">
+                    <div class="valid-feedback">
+                        Подходит!
+                    </div>
+                    <div class="invalid-feedback">
+                        Пожалуйста, введите правильные данные!
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="positionInput">Должность</label>
+                    <input th:value="${add} ? '' : ${userProfile.position}" type="text" name="position"
+                           class="form-control"
+                           id="positionInput" aria-describedby="positionHelp" placeholder="Введите должность"
+                           minlength="2"
+                           maxlength="30" required>
+                    <div class="valid-feedback">
+                        Подходит!
+                    </div>
+                    <div class="invalid-feedback">
+                        Пожалуйста, введите правильные данные!
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="phoneNumberInput">Номер телефона</label>
+                    <input th:value="${add} ? '' : ${userProfile.phoneNumber}" type="text" name="phoneNumber"
+                           class="form-control"
+                           id="phoneNumberInput" aria-describedby="phoneNumberHelp" placeholder="Введите номер"
+                           minlength="2"
+                           maxlength="30" required>
+                    <div class="valid-feedback">
+                        Подходит!
+                    </div>
+                    <div class="invalid-feedback">
+                        Пожалуйста, введите правильные данные!
+                    </div>
+                </div>
+                <div class="form-group"
+                     th:if="${add}?'':${userProfile.role.getRoleName().equals('ROLE_USER')}">
+                    <label for="companyNameInput">Название компании/учреждения</label>
+                    <input th:value="${add} ? '' : ${userProfile.companyName}" type="text" name="companyName"
+                           class="form-control"
+                           id="companyNameInput" aria-describedby="companyNameHelp" placeholder="Введите название"
+                           minlength="2"
+                           maxlength="30" required>
+                    <div class="valid-feedback">
+                        Подходит!
+                    </div>
+                    <div class="invalid-feedback">
+                        Пожалуйста, введите правильные данные!
+                    </div>
+                </div>
+                <div class="form-group"
+                     th:if="${add}?'':${userProfile.role.getRoleName().equals('ROLE_USER')}">
+                    <label for="companyOccupationInput">Сфера деятельности</label>
+                    <input th:value="${add} ? '' : ${userProfile.companyOccupation}" type="text"
+                           name="companyOccupation" class="form-control"
+                           id="companyOccupationInput" aria-describedby="companyOccupationHelp"
+                           placeholder="Введите сферу деятельности" minlength="2"
+                           maxlength="100" required>
+                    <div class="valid-feedback">
+                        Подходит!
+                    </div>
+                    <div class="invalid-feedback">
+                        Пожалуйста, введите правильные данные!
+                    </div>
+                </div>
+                <div class="form-group"
+                     th:if="${add}?'':${userProfile.role.getRoleName().equals('ROLE_USER')}">
+                    <label for="websiteInput">Веб-сайт</label>
+                    <input th:value="${add} ? '' : ${userProfile.website}" type="url" name="website"
+                           class="form-control"
+                           id="websiteInput" aria-describedby="websiteInputHelp" placeholder="Введите веб-сайт">
+                    <div class="valid-feedback">
+                        Подходит!
+                    </div>
+                    <div class="invalid-feedback">
+                        Пожалуйста, введите правильные данные!
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="addressInput">Адрес</label>
+                    <input th:value="${add} ? '' : ${userProfile.address}" type="text" name="address"
+                           class="form-control"
+                           id="addressInput" aria-describedby="addressHelp" placeholder="Введите адрес">
+                    <div class="valid-feedback">
+                        Подходит!
+                    </div>
+                    <div class="invalid-feedback">
+                        Пожалуйста, введите правильные данные!
+                    </div>
+                </div>
+                <div class="form-group"
+                     th:if="${add}?'':${userProfile.role.getRoleName().equals('ROLE_USER')}">
+                    <label for="sourceInput">Откуда узнали про нас</label>
+                    <input th:value="${add} ? '' : ${userProfile.source}" type="text" name="source" class="form-control"
+                           id="sourceInput" aria-describedby="sourceHelp" placeholder="Введите откуда узнали">
+                    <div class="valid-feedback">
+                        Подходит!
+                    </div>
+                    <div class="invalid-feedback">
+                        Пожалуйста, введите правильные данные!
+                    </div>
+                </div>
+                <div class="form-group"
+                     th:if="${add}?'':${userProfile.role.getRoleName().equals('ROLE_USER')}">
+                    <label for="activeInput">Активность
+                        <input th:checked="${add} ? '' : ${userProfile.isActive}" type="checkbox" name="isActive"
+                               class="form-control"
+                               id="activeInput" aria-describedby="activeHelp"></label>
+                    <div class="valid-feedback">
+                        Подходит!
+                    </div>
+                    <div class="invalid-feedback">
+                        Пожалуйста, введите правильные данные!
+                    </div>
+                </div>
+                <div th:if="${add}" class="form-group">
+                    <label class="text-secondary font-bold" for="input-select">Роль</label>
+                    <select name="roleName" class="form-control" id="input-select">
+                        <option th:if="${user.getRole().getRoleName() == 'ROLE_ADMIN'}" value="ROLE_MANAGER">МЕНЕДЖЕР</option>
+                        <option value="ROLE_USER">КЛИЕНТ</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn au-btn--blue2" style="color: aliceblue">Отправить</button>
+            </form>
+        </div>
+    </div>
+</layout:html>

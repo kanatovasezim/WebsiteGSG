@@ -1,0 +1,9 @@
+.clients{
+  .client-item{
+    height: 180px;
+  }
+  [class*="col-"] {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+}

@@ -1,0 +1,1144 @@
+<!DOCTYPE html>
+<html lang="en-US" xmlns:th="http://www.thymeleaf.org"
+      xmlns="http://www.w3.org/1999/xhtml"
+      class="js cookies svg localstorage audio video rgba csscalc cssanimations csscolumns csscolumns-width csscolumns-span csscolumns-fill csscolumns-gap csscolumns-rule csscolumns-rulecolor csscolumns-rulestyle csscolumns-rulewidth csscolumns-breakbefore csscolumns-breakafter csscolumns-breakinside flexbox no-cssgridlegacy cssgrid">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link href="/images/gsg.png" rel="icon">
+    <title>Good Solutions Group</title>
+    <link rel="dns-prefetch" href="http://fonts.googleapis.com/">
+    <link rel="dns-prefetch" href="http://s.w.org/">
+    <script type="text/javascript">
+        window._wpemojiSettings = {
+            "baseUrl": "https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/72x72\/",
+            "ext": ".png",
+            "svgUrl": "https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/svg\/",
+            "svgExt": ".svg",
+            "source": {"concatemoji": "http:\/\/webdesign-finder.com\/hi5clive\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.2.7"}
+        };
+        !function (a, b, c) {
+            function d(a, b) {
+                var c = String.fromCharCode;
+                l.clearRect(0, 0, k.width, k.height), l.fillText(c.apply(this, a), 0, 0);
+                var d = k.toDataURL();
+                l.clearRect(0, 0, k.width, k.height), l.fillText(c.apply(this, b), 0, 0);
+                var e = k.toDataURL();
+                return d === e
+            }
+
+            function e(a) {
+                var b;
+                if (!l || !l.fillText) return !1;
+                switch (l.textBaseline = "top", l.font = "600 32px Arial", a) {
+                    case"flag":
+                        return !(b = d([55356, 56826, 55356, 56819], [55356, 56826, 8203, 55356, 56819])) && (b = d([55356, 57332, 56128, 56423, 56128, 56418, 56128, 56421, 56128, 56430, 56128, 56423, 56128, 56447], [55356, 57332, 8203, 56128, 56423, 8203, 56128, 56418, 8203, 56128, 56421, 8203, 56128, 56430, 8203, 56128, 56423, 8203, 56128, 56447]), !b);
+                    case"emoji":
+                        return b = d([55357, 56424, 55356, 57342, 8205, 55358, 56605, 8205, 55357, 56424, 55356, 57340], [55357, 56424, 55356, 57342, 8203, 55358, 56605, 8203, 55357, 56424, 55356, 57340]), !b
+                }
+                return !1
+            }
+
+            function f(a) {
+                var c = b.createElement("script");
+                c.src = a, c.defer = c.type = "text/javascript", b.getElementsByTagName("head")[0].appendChild(c)
+            }
+
+            var g, h, i, j, k = b.createElement("canvas"), l = k.getContext && k.getContext("2d");
+            for (j = Array("flag", "emoji"), c.supports = {
+                everything: !0,
+                everythingExceptFlag: !0
+            }, i = 0; i < j.length; i++) c.supports[j[i]] = e(j[i]), c.supports.everything = c.supports.everything && c.supports[j[i]], "flag" !== j[i] && (c.supports.everythingExceptFlag = c.supports.everythingExceptFlag && c.supports[j[i]]);
+            c.supports.everythingExceptFlag = c.supports.everythingExceptFlag && !c.supports.flag, c.DOMReady = !1, c.readyCallback = function () {
+                c.DOMReady = !0
+            }, c.supports.everything || (h = function () {
+                c.readyCallback()
+            }, b.addEventListener ? (b.addEventListener("DOMContentLoaded", h, !1), a.addEventListener("load", h, !1)) : (a.attachEvent("onload", h), b.attachEvent("onreadystatechange", function () {
+                "complete" === b.readyState && c.readyCallback()
+            })), g = c.source || {}, g.concatemoji ? f(g.concatemoji) : g.wpemoji && g.twemoji && (f(g.twemoji), f(g.wpemoji)))
+        }(window, document, window._wpemojiSettings);
+    </script>
+    <script type="text/javascript" th:src="@{/js/wp-emoji-release.min.js}" defer=""></script>
+    <style type="text/css">
+        img.wp-smiley,
+        img.emoji {
+            display: inline !important;
+            border: none !important;
+            box-shadow: none !important;
+            height: 1em !important;
+            width: 1em !important;
+            margin: 0 .07em !important;
+            vertical-align: -0.1em !important;
+            background: none !important;
+            padding: 0 !important;
+        }
+    </style>
+    <link rel="stylesheet" id="wp-block-library-css" th:href="@{/css/style.min.css}" type="text/css" media="all">
+    <link rel="stylesheet" id="sb_instagram_styles-css" th:href="@{/css/sb-instagram.min.css}" type="text/css"
+          media="all">
+    <link rel="stylesheet" id="rs-plugin-settings-css" th:href="@{/css/settings.css}" type="text/css" media="all">
+    <style id="rs-plugin-settings-inline-css" type="text/css">
+        #rs-demo-id {
+        }
+    </style>
+    <link rel="stylesheet" id="font-awesome-css" th:href="@{/css/font-awesome.min.css}" type="text/css" media="all">
+    <link rel="stylesheet" id="hi5clive-icon-fonts-css" th:href="@{/css/fonts.css}" type="text/css" media="all">
+    <link rel="stylesheet" id="hi5clive-font-css" th:href="@{/css/css.css}" type="text/css" media="all">
+    <link rel="stylesheet" id="hi5clive-accesspress-css" th:href="@{/css/accesspress.css}" type="text/css" media="all">
+    <link rel="stylesheet" id="hi5clive-css-style-css" th:href="@{/css/style.css}" type="text/css" media="all">
+    <link rel="stylesheet" id="bootstrap-css" th:href="@{/css/bootstrap.min.css}" type="text/css" media="all">
+    <link rel="stylesheet" id="hi5clive-animations-css" th:href="@{/css/animations.css}" type="text/css" media="all">
+    <link rel="stylesheet" id="hi5clive-main-css" th:href="@{/css/mainAbout.css}" type="text/css" media="all">
+    <style id="hi5clive-main-inline-css" type="text/css">
+        #section-77915c4.fw-main-row {
+            background-color: #ffb820;
+        }
+
+
+        #section-c66129d.fw-main-row {
+            background-color: #ffb820;
+        }
+
+        #section-c66129d.fw-main-row {
+            background-image: url("http://webdesign-finder.com/hi5clive/wp-content/uploads/2018/10/section_bg.jpg");
+        }
+
+        #section-5366184.fw-main-row {
+            background-color: #ffb820;
+        }
+
+    </style>
+    <link rel="stylesheet" id="fw-shortcode-divider-css" th:href="@{/css/styles.css}" type="text/css" media="all">
+    <script type="text/javascript" th:src="@{/js/jquery.js}"></script>
+    <script type="text/javascript" th:src="@{/js/jquery-migrate.min.js}"></script>
+    <script type="text/javascript" th:src="@{/js/jquery.themepunch.tools.min.js}"></script>
+    <script type="text/javascript" th:src="@{/js/jquery.themepunch.revolution.min.js}"></script>
+    <script type="text/javascript">
+        /* <![CDATA[ */
+        var SnazzyDataForSnazzyMaps = [];
+        SnazzyDataForSnazzyMaps = {
+            "id": 151,
+            "name": "Ultra Light with Labels",
+            "description": "Light Rust",
+            "url": "https:\/\/snazzymaps.com\/style\/151\/ultra-light-with-labels",
+            "imageUrl": "https:\/\/snazzy-maps-cdn.azureedge.net\/assets\/151-ultra-light-with-labels.png?v=20170626083737",
+            "json": "[{\"featureType\":\"water\",\"elementType\":\"geometry\",\"stylers\":[{\"color\":\"#e9e9e9\"},{\"lightness\":17}]},{\"featureType\":\"landscape\",\"elementType\":\"geometry\",\"stylers\":[{\"color\":\"#f5f5f5\"},{\"lightness\":20}]},{\"featureType\":\"road.highway\",\"elementType\":\"geometry.fill\",\"stylers\":[{\"color\":\"#ffffff\"},{\"lightness\":17}]},{\"featureType\":\"road.highway\",\"elementType\":\"geometry.stroke\",\"stylers\":[{\"color\":\"#ffffff\"},{\"lightness\":29},{\"weight\":0.2}]},{\"featureType\":\"road.arterial\",\"elementType\":\"geometry\",\"stylers\":[{\"color\":\"#ffffff\"},{\"lightness\":18}]},{\"featureType\":\"road.local\",\"elementType\":\"geometry\",\"stylers\":[{\"color\":\"#ffffff\"},{\"lightness\":16}]},{\"featureType\":\"poi\",\"elementType\":\"geometry\",\"stylers\":[{\"color\":\"#f5f5f5\"},{\"lightness\":21}]},{\"featureType\":\"poi.park\",\"elementType\":\"geometry\",\"stylers\":[{\"color\":\"#dedede\"},{\"lightness\":21}]},{\"elementType\":\"labels.text.stroke\",\"stylers\":[{\"visibility\":\"on\"},{\"color\":\"#ffffff\"},{\"lightness\":16}]},{\"elementType\":\"labels.text.fill\",\"stylers\":[{\"saturation\":36},{\"color\":\"#333333\"},{\"lightness\":40}]},{\"elementType\":\"labels.icon\",\"stylers\":[{\"visibility\":\"off\"}]},{\"featureType\":\"transit\",\"elementType\":\"geometry\",\"stylers\":[{\"color\":\"#f2f2f2\"},{\"lightness\":19}]},{\"featureType\":\"administrative\",\"elementType\":\"geometry.fill\",\"stylers\":[{\"color\":\"#fefefe\"},{\"lightness\":20}]},{\"featureType\":\"administrative\",\"elementType\":\"geometry.stroke\",\"stylers\":[{\"color\":\"#fefefe\"},{\"lightness\":17},{\"weight\":1.2}]}]",
+            "views": 733070,
+            "favorites": 1897,
+            "createdBy": {"name": "Anonymous", "url": null},
+            "createdOn": "2014-11-04T03:01:33.197",
+            "tags": ["greyscale", "light"],
+            "colors": ["gray", "white"]
+        };
+        /* ]]> */
+    </script>
+    <script type="text/javascript" th:src="@{/js/snazzymaps.js}"></script>
+    <script type="text/javascript" th:src="@{/js/modernizr-custom.js}"></script>
+    <link rel="EditURI" type="application/rsd+xml" title="RSD"
+          href="http://webdesign-finder.com/hi5clive/xmlrpc.php?rsd">
+    <link rel="wlwmanifest" type="application/wlwmanifest+xml"
+          href="http://webdesign-finder.com/hi5clive/wp-includes/wlwmanifest.xml">
+    <meta name="generator" content="WordPress 5.2.7">
+    <link rel="canonical" href="http://webdesign-finder.com/hi5clive/about/">
+    <link rel="shortlink" href="http://webdesign-finder.com/hi5clive/?p=4217">
+    <link rel="alternate" type="application/json+oembed"
+          href="http://webdesign-finder.com/hi5clive/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fwebdesign-finder.com%2Fhi5clive%2Fabout%2F">
+    <link rel="alternate" type="text/xml+oembed"
+          href="http://webdesign-finder.com/hi5clive/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fwebdesign-finder.com%2Fhi5clive%2Fabout%2F&amp;format=xml">
+    <meta name="generator"
+          content="Powered by Slider Revolution 5.4.8.2 - responsive, Mobile-Friendly Slider Plugin for WordPress with comfortable drag and drop interface.">
+    <link rel="icon" href="http://webdesign-finder.com/hi5clive/wp-content/uploads/2018/08/cropped-favicon-150x150.jpg"
+          sizes="32x32">
+    <link rel="icon" href="http://webdesign-finder.com/hi5clive/wp-content/uploads/2018/08/cropped-favicon-300x300.jpg"
+          sizes="192x192">
+    <link rel="apple-touch-icon-precomposed"
+          href="http://webdesign-finder.com/hi5clive/wp-content/uploads/2018/08/cropped-favicon-300x300.jpg">
+    <meta name="msapplication-TileImage"
+          content="http://webdesign-finder.com/hi5clive/wp-content/uploads/2018/08/cropped-favicon-300x300.jpg">
+    <script type="text/javascript">function setREVStartSize(e) {
+        try {
+            e.c = jQuery(e.c);
+            var i = jQuery(window).width(), t = 9999, r = 0, n = 0, l = 0, f = 0, s = 0, h = 0;
+            if (e.responsiveLevels && (jQuery.each(e.responsiveLevels, function (e, f) {
+                f > i && (t = r = f, l = e), i > f && f > r && (r = f, n = e)
+            }), t > r && (l = n)), f = e.gridheight[l] || e.gridheight[0] || e.gridheight, s = e.gridwidth[l] || e.gridwidth[0] || e.gridwidth, h = i / s, h = h > 1 ? 1 : h, f = Math.round(h * f), "fullscreen" == e.sliderLayout) {
+                var u = (e.c.width(), jQuery(window).height());
+                if (void 0 != e.fullScreenOffsetContainer) {
+                    var c = e.fullScreenOffsetContainer.split(",");
+                    if (c) jQuery.each(c, function (e, i) {
+                        u = jQuery(i).length > 0 ? u - jQuery(i).outerHeight(!0) : u
+                    }), e.fullScreenOffset.split("%").length > 1 && void 0 != e.fullScreenOffset && e.fullScreenOffset.length > 0 ? u -= jQuery(window).height() * parseInt(e.fullScreenOffset, 0) / 100 : void 0 != e.fullScreenOffset && e.fullScreenOffset.length > 0 && (u -= parseInt(e.fullScreenOffset, 0))
+                }
+                f = u
+            } else void 0 != e.minHeight && f < e.minHeight && (f = e.minHeight);
+            e.c.closest(".rev_slider_wrapper").css({height: f})
+        } catch (d) {
+            console.log("Failure at Presize of Slider:" + d)
+        }
+    };</script>
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+    <link rel="stylesheet" th:href="@{/css/bootstrap.min.css}">
+    <link rel="stylesheet" th:href="@{/css/animations.css}">
+    <link rel="stylesheet" th:href="@{/css/font-awesome.css}">
+    <link rel="stylesheet" th:href="@{/css/main1.css}" class="color-switcher-link">
+    <script th:src="@{/vendor/modernizr-custom.js}"></script>
+
+    <!--[if lt IE 9]>
+    <script th:src="@{/vendor/html5shiv.min.js}"></script>
+    <script th:src="@{/vendor/respond.min.js}"></script>
+    <script th:src="@{/vendor/jquery-1.12.4.min.js}"></script>
+    <![endif]-->
+</head>
+<body class="page-template page-template-page-templates page-template-full-width page-template-page-templatesfull-width-php page page-id-4217 masthead-fixed full-width singular header_type_1"
+      data-gr-c-s-loaded="true">
+<div class="preloader">
+    <div class="preloader_image to_animate" data-animation="pulse"></div>
+</div>
+<div id="canvas" class="wide">
+    <div id="box_wrapper">
+        <div class="page_header_wrapper affix-wrapper" style="height: 75px;">
+            <header id="header" class="page_header header_1 toggler_right ds affix">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-sm-12 display_table">
+                            <div class="header_left_logo display_table_cell">
+                                <a rel="home" class="logo logo_image_only">
+                                    <img th:src="@{/images/gsg.png}" height="30" width="100" alt="">
+                                </a></div><!-- eof .header_left_logo -->
+                            <div class="header_mainmenu display_table_cell text-right">
+                                <nav class="mainmenu_wrapper primary-navigation" style="">
+                                    <ul id="menu-main-menu-default" class="sf-menu nav-menu nav sf-js-enabled sf-arrows"
+                                        style="touch-action: pan-y;">
+                                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-has-children ">
+                                            <a th:href="@{/website/index}"
+                                               class="sf-with-ul">Главная</a><span
+                                                class="sf-menu-item-mobile-toggler"></span>
+                                        </li>
+                                        <li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-4217 current_page_item">
+                                            <a th:href="@{/templates/website/aboutUs}">О нас</a></li>
+                                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children">
+                                            <a th:href="@{/website/service}" class="sf-with-ul">Услуги</a><span
+                                                class="sf-menu-item-mobile-toggler"></span>
+                                            <ul class="sub-menu" style="display: none; margin-top: 45px;">
+                                                <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                                                    <a th:href="@{/website/service/marketing}">Маркетинг</a>
+                                                    <ul class="sub-menu" style="display: none; margin-top: 45px;">
+                                                        <li class="menu-item menu-item-type-post_type menu-item-object-page ">
+                                                            <a th:href="@{/website/service/marketing/strategy}">Разработка
+                                                                маркетинговой стратегии</a></li>
+                                                        <li
+                                                                class="menu-item menu-item-type-post_type menu-item-object-page ">
+                                                            <a th:href="@{/website/service/marketing/businessplan}">Бизнес-планирование</a>
+                                                        <li
+                                                                class="menu-item menu-item-type-post_type menu-item-object-page">
+                                                            <a th:href="@{/website/service/marketing/RD}">R&D</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children">
+                                                    <a th:href="@{/website/service/consulting}"
+                                                       class="sf-with-ul">Консалтинг</a><span
+                                                        class="sf-menu-item-mobile-toggler"></span>
+                                                </li>
+                                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children">
+                                                    <a th:href="@{/website/service/sales}"
+                                                       class="sf-with-ul">Продажи</a><span
+                                                        class="sf-menu-item-mobile-toggler"></span>
+                                                </li>
+                                                <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                                                    <a th:href="@{/website/service/eventOrganization}">Организация
+                                                        мероприятий</a>
+                                                </li>
+                                                <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                                                    <a th:href="@{/website/service/production}">Продакшн</a>
+                                                    <ul class="sub-menu" style="display: none; margin-top: 45px;">
+                                                        <li class="menu-item menu-item-type-post_type menu-item-object-page ">
+                                                            <a th:href="@{/website/service/production/photo}">Фото</a>
+                                                            <ul class="sub-menu"
+                                                                style="display: none; margin-top: 45px;">
+                                                                <li class="menu-item menu-item-type-post_type menu-item-object-page ">
+                                                                    <a th:href="@{/website/service/production/photo/subject}">Предметная</a>
+                                                                </li>
+                                                                <li class="menu-item menu-item-type-post_type menu-item-object-page ">
+                                                                    <a th:href="@{/website/service/production/photo/interier}">Интерьерная</a>
+                                                                </li>
+                                                                <li class="menu-item menu-item-type-post_type menu-item-object-page ">
+                                                                    <a th:href="@{/website/service/production/photo/image}">Имиджевая</a>
+                                                                </li>
+                                                                <li class="menu-item menu-item-type-post_type menu-item-object-page ">
+                                                                    <a th:href="@{/website/service/production/photo/reportage}">Репортажная</a>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="menu-item menu-item-type-post_type menu-item-object-page ">
+                                                            <a th:href="@{/website/service/production/video}">Видео</a>
+                                                            <ul class="sub-menu"
+                                                                style="display: none; margin-top: 45px;">
+                                                                <li class="menu-item menu-item-type-post_type menu-item-object-page ">
+                                                                    <a th:href="@{/website/service/production/video/advertisement}">Рекламная</a>
+                                                                </li>
+                                                                <li class="menu-item menu-item-type-post_type menu-item-object-page ">
+                                                                    <a th:href="@{/website/service/production/video/event}">Cобытийная</a>
+                                                                </li>
+                                                                <li class="menu-item menu-item-type-post_type menu-item-object-page ">
+                                                                    <a th:href="@{/website/service/production/video/reportage}">Репортажная</a>
+                                                                </li>
+                                                                <li class="menu-item menu-item-type-post_type menu-item-object-page ">
+                                                                    <a th:href="@{/website/service/production/video/promo}">Промо-ролик</a>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="menu-item menu-item-type-post_type menu-item-object-page ">
+                                                            <a th:href="@{/website/service/production/youtube}">YouTube</a>
+                                                        </li>
+                                                        <li class="menu-item menu-item-type-post_type menu-item-object-page ">
+                                                            <a th:href="@{/website/service/production/tiktok}">TikTok</a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li class="menu-item menu-item-type-post_type menu-item-object-page ">
+                                                    <a th:href="@{/website/service/branding}">Упаковка бизнеса</a>
+                                                    <ul class="sub-menu" style="display: none; margin-top: 45px;">
+                                                        <li class="menu-item menu-item-type-post_type menu-item-object-page ">
+                                                            <a th:href="@{/website/service/branding/analysis}">Анализ конкурентов</a>
+                                                        </li>
+                                                        <li class="menu-item menu-item-type-post_type menu-item-object-page ">
+                                                            <a th:href="@{/website/service/branding/style}">Разработка фирменного стиля</a>
+                                                        </li>
+                                                        <li class="menu-item menu-item-type-post_type menu-item-object-page ">
+                                                            <a th:href="@{/website/service/branding/seo}">Комплексное продвижение сайта</a>
+                                                        </li>
+                                                        <li class="menu-item menu-item-type-post_type menu-item-object-page ">
+                                                            <a th:href="@{/website/service/branding/smm}">Продвижение в соц сетях</a>
+                                                        </li>
+                                                        <li class="menu-item menu-item-type-post_type menu-item-object-page ">
+                                                            <a th:href="@{/website/service/branding/bot}">Разработка чат-ботов</a>
+                                                        </li>
+                                                        <li class="menu-item menu-item-type-post_type menu-item-object-page ">
+                                                            <a th:href="@{/website/service/branding/event}">Организация мероприятий</a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                                                    <a th:href="@{/website/service/it}">Разработка IT продуктов</a>
+                                                    <ul class="sub-menu" style="display: none; margin-top: 45px;">
+                                                        <li class="menu-item menu-item-type-post_type menu-item-object-page ">
+                                                            <a th:href="@{/website/service/it/website}">Создание сайтов</a>
+                                                            <ul class="sub-menu"
+                                                                style="display: none; margin-top: 45px;">
+                                                                <li class="menu-item menu-item-type-post_type menu-item-object-page ">
+                                                                    <a th:href="@{/website/service/it/website/eshop}">Интернет-магазин</a>
+                                                                </li>
+                                                                <li class="menu-item menu-item-type-post_type menu-item-object-page ">
+                                                                    <a th:href="@{/website/service/it/website/corporate}">Корпоративный сайт</a>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="menu-item menu-item-type-post_type menu-item-object-page ">
+                                                            <a th:href="@{/website/service/it/landingpage}">Landing page</a>
+                                                        </li>
+                                                        <li class="menu-item menu-item-type-post_type menu-item-object-page ">
+                                                            <a th:href="@{/website/service/it/advlist}">Доска объявлений</a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                                                    <a th:href="@{/website/service/adv}">Реклама</a>
+                                                    <ul class="sub-menu" style="display: none; margin-top: 45px;">
+                                                        <li class="menu-item menu-item-type-post_type menu-item-object-page ">
+                                                            <a th:href="@{/website/service/adv/complex}">Комплексная реклама в интернете</a>
+                                                        </li>
+                                                        <li class="menu-item menu-item-type-post_type menu-item-object-page ">
+                                                            <a th:href="@{/website/service/adv/context}">Контекстная реклама</a>
+                                                        </li>
+                                                        <li class="menu-item menu-item-type-post_type menu-item-object-page ">
+                                                            <a th:href="@{/website/service/adv/smm}">Реклама в социальных сетях</a>
+                                                        </li>
+                                                        <li class="menu-item menu-item-type-post_type menu-item-object-page ">
+                                                            <a th:href="@{/website/service/adv/tv}">Реклама на ТВ</a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                                                    <a th:href="@{/website/service/design}">Дизайн</a>
+                                                </li>
+                                                <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                                                    <a th:href="@{/website/service/smm}">СММ</a>
+                                                    <ul class="sub-menu" style="display: none; margin-top: 45px;">
+                                                        <li class="menu-item menu-item-type-post_type menu-item-object-page ">
+                                                            <a th:href="@{/website/service/smm/facebook}">Фейсбук</a>
+                                                        </li>
+                                                        <li class="menu-item menu-item-type-post_type menu-item-object-page ">
+                                                            <a th:href="@{/website/service/smm/instagram}">Инстаграм</a>
+                                                        </li>
+                                                        <li class="menu-item menu-item-type-post_type menu-item-object-page ">
+                                                            <a th:href="@{/website/service/smm/telegram}">Телеграм</a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="menu-item menu-item-type-taxonomy menu-item-object-fw-services-category menu-item-has-children">
+                                            <a th:href="@{/website/clients}" class="sf-with-ul">Клиенты</a><span
+                                                class="sf-menu-item-mobile-toggler"></span>
+                                        </li>
+                                        <li id="menu-item-4670"
+                                            class="menu-item menu-item-type-post_type_archive menu-item-object-fw-event menu-item-has-children ">
+                                            <a th:href="@{/website/contacts}" class="sf-with-ul">Контакты</a><span
+                                                class="sf-menu-item-mobile-toggler"></span>
+                                        </li>
+                                    </ul>
+                                </nav>
+                                <span class="toggle_menu"><span></span></span>
+                            </div><!--	eof .col-sm-* -->
+                        </div>
+                    </div><!--	eof .row-->
+                </div> <!--	eof .container-->
+            </header>
+        </div>
+        <div class="fw-page-builder-content">
+            <section id="section-77915c4"
+                     class="fw-main-row  section_padding_top_100 section_padding_bottom_150 columns_padding_30">
+                <h3 class="hidden"> About</h3>
+                <div class="container">
+                    <div class="row">
+                        <div id="column-e8841b9"
+                             class="col-xs-12 col-md-6 to_animate text-center fw-column animated fadeInLeft"
+                             data-animation="fadeInLeft">
+
+                            <div class="fw-divider-space " style="margin-top: 50px;"></div>
+
+                            <div class="img-wrap "><img th:src="@{/images/about_home.jpg}"
+                                                        alt="//webdesign-finder.com/hi5clive/wp-content/uploads/2018/09/about_home.jpg">
+                            </div>
+                        </div>
+                        <div id="column-bb575c3" class="col-xs-12 col-md-6 to_animate fw-column animated fadeInRight"
+                             data-animation="fadeInRight">
+
+                            <div class="fw-divider-space  hidden-md hidden-sm hidden-xs"
+                                 style="margin-top: 120px;"></div>
+
+
+                            <div class="fw-divider-space  hidden-lg" style="margin-top: 50px;"></div>
+
+                            <div class="special-heading text-left">
+                                <h2 class="section_header margin_0 push-right ">
+	<span class=" extra-light text-transform-none">
+		<strong>Hi<span class="highlight">5</span>, I’m Clive,</strong> a Digital	</span>
+                                </h2>
+                                <h2 class="section_header margin_0 push-right ">
+	<span class=" extra-light text-transform-none">
+		Enterpreneur based in	</span>
+                                </h2>
+                                <h2 class="section_header margin_0 push-right ">
+	<span class=" extra-light text-transform-none">
+		San Diego...	</span>
+                                </h2>
+                            </div>
+
+                            <div class="fw-divider-space  hidden-sm hidden-xs" style="margin-top: 60px;"></div>
+
+
+                            <div class="fw-divider-space  hidden-lg hidden-md" style="margin-top: 30px;"></div>
+
+                            <div class="text-block shortcode font24">
+                                <p><strong class="highlight2">My goal is to help people build better and more meaningful
+                                    products.</strong> My work ranges from strategic planning and rough prototyping in
+                                    the early stages, to creating a strong visual design language, all of which
+                                    increases the value of both the brand and the product.</p></div>
+
+                            <div class="fw-divider-space  hidden-sm hidden-xs" style="margin-top: 70px;"></div>
+
+
+                            <div class="fw-divider-space  hidden-lg hidden-md" style="margin-top: 30px;"></div>
+
+                            <a href="http://webdesign-finder.com/hi5clive/about" target="_self"
+                               class="theme_button inverse color1 theme_button push-right">
+                                About</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="section-c66129d"
+                     class="fw-main-row  section_padding_top_130 section_padding_bottom_130 columns_padding_15 parallax fullwidth-section background_cover"
+                     style="background-position: 50% 2px;">
+                <h3 class="hidden"> Bio</h3>
+                <div class="container-fluid">
+                    <div class="row">
+                        <div id="column-47157dc" class="col-xs-12 text-right fw-column">
+
+                            <div class="fw-divider-space " style="margin-top: 13px;"></div>
+
+                            <div class="special-heading text-center">
+                                <h2 class="section_header margin_0  ">
+	<span class=" extra-light text-transform-none">
+		My <strong>Hi<span class="highlight number">5</span></strong> Way	</span>
+                                </h2>
+                            </div>
+
+                            <div class="fw-divider-space " style="margin-top: 50px;"></div>
+
+                            <div class="fw-theme-steps-outer">
+                                <div class="first-icon">
+                                    <div class="icon-inner">
+                                        <img th:src="@{/images/first_icon.png}" alt="4568"></div>
+                                </div>
+                                <div class="fw-theme-steps steps-1">
+                                    <div class="fw-theme-step-wrap">
+                                        <div class="fw-step-left-part">
+                                            <div class="year">2013</div>
+                                            <h2 class="step-title">Beginning</h2>
+                                        </div>
+                                        <div class="fw-step-center-part">
+                                            <div id="card-5f31871688263" class="fw-step-img-wrap">
+                                                <img width="600" height="600" th:src="@{/images/step-1.jpg}"
+                                                     class="attachment-hi5clive-square size-hi5clive-square" alt=""
+                                                     srcset="http://webdesign-finder.com/hi5clive/wp-content/uploads/2018/10/step-1.jpg 600w, http://webdesign-finder.com/hi5clive/wp-content/uploads/2018/10/step-1-150x150.jpg 150w, http://webdesign-finder.com/hi5clive/wp-content/uploads/2018/10/step-1-300x300.jpg 300w"
+                                                     sizes="(max-width: 600px) 100vw, 600px"></div>
+                                        </div>
+                                        <div class="fw-step-right-part">
+                                            <div class="step-text">
+                                                <p>
+                                                    First experience in entrepreneuring, projects for local
+                                                    companies. </p>
+                                                <span class="item_icon to_animate animated floating"
+                                                      data-animation="floating">
+							        <img th:src="@{/images/step_icon_1.png}" alt="4570">                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="fw-theme-step-wrap">
+                                        <div class="fw-step-left-part">
+                                            <div class="year">2014</div>
+                                            <h2 class="step-title">Growth</h2>
+                                        </div>
+                                        <div class="fw-step-center-part">
+                                            <div id="card-5f3187168865f" class="fw-step-img-wrap">
+                                                <img width="600" height="600" th:src="@{/images/step-2.jpg}"
+                                                     class="attachment-hi5clive-square size-hi5clive-square" alt=""
+                                                     srcset="http://webdesign-finder.com/hi5clive/wp-content/uploads/2018/10/step-2.jpg 600w, http://webdesign-finder.com/hi5clive/wp-content/uploads/2018/10/step-2-150x150.jpg 150w, http://webdesign-finder.com/hi5clive/wp-content/uploads/2018/10/step-2-300x300.jpg 300w"
+                                                     sizes="(max-width: 600px) 100vw, 600px"></div>
+                                        </div>
+                                        <div class="fw-step-right-part">
+                                            <div class="step-text">
+                                                <p>
+                                                    Started working at entrepreneuring company. </p>
+                                                <span class="item_icon to_animate animated floating"
+                                                      data-animation="floating">
+							        <img th:src="@{/images/step_icon_2.png}" alt="4571">                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="fw-theme-step-wrap">
+                                        <div class="fw-step-left-part">
+                                            <div class="year">2016</div>
+                                            <h2 class="step-title">Founding</h2>
+                                        </div>
+                                        <div class="fw-step-center-part">
+                                            <div id="card-5f318716889ef" class="fw-step-img-wrap">
+                                                <img width="600" height="600" th:src="@{/images/step-3.jpg}"
+                                                     class="attachment-hi5clive-square size-hi5clive-square" alt=""
+                                                     srcset="http://webdesign-finder.com/hi5clive/wp-content/uploads/2018/10/step-3.jpg 600w, http://webdesign-finder.com/hi5clive/wp-content/uploads/2018/10/step-3-150x150.jpg 150w, http://webdesign-finder.com/hi5clive/wp-content/uploads/2018/10/step-3-300x300.jpg 300w"
+                                                     sizes="(max-width: 600px) 100vw, 600px"></div>
+                                        </div>
+                                        <div class="fw-step-right-part">
+                                            <div class="step-text">
+                                                <p>
+                                                    My partners and I founded <strong>Hi<span class="highlight">5</span></strong>
+                                                    entrepreneuring company. </p>
+                                                <span class="item_icon to_animate" data-animation="floating">
+							        <img th:src="@{/images/step_icon_3.png}" alt="4572">                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="fw-theme-step-wrap">
+                                        <div class="fw-step-left-part">
+                                            <div class="year">2018</div>
+                                            <h2 class="step-title">Leading</h2>
+                                        </div>
+                                        <div class="fw-step-center-part">
+                                            <div id="card-5f31871688d6b" class="fw-step-img-wrap">
+                                                <img width="600" height="600" th:src="@{/images/step-4.jpg}"
+                                                     class="attachment-hi5clive-square size-hi5clive-square" alt=""
+                                                     srcset="http://webdesign-finder.com/hi5clive/wp-content/uploads/2018/10/step-4.jpg 600w, http://webdesign-finder.com/hi5clive/wp-content/uploads/2018/10/step-4-150x150.jpg 150w, http://webdesign-finder.com/hi5clive/wp-content/uploads/2018/10/step-4-300x300.jpg 300w"
+                                                     sizes="(max-width: 600px) 100vw, 600px"></div>
+                                        </div>
+                                        <div class="fw-step-right-part">
+                                            <div class="step-text">
+                                                <p>
+                                                    <strong>Hi<span class="highlight">5</span></strong> got a leading
+                                                    position in the Internet advertising market. </p>
+                                                <span class="item_icon to_animate" data-animation="floating">
+							                                        </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="last-icon">
+                                    <div class="icon-inner">
+                                        <img th:src="@{/images/last_icon.png}" alt="4569"></div>
+                                </div>
+                            </div>
+                            <div class="fw-divider-space " style="margin-top: 22px;"></div>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="section-5366184"
+                     class="fw-main-row  section_padding_top_130 section_padding_bottom_75 columns_padding_15">
+                <h3 class="hidden"> Services</h3>
+                <div class="container">
+                    <div class="row">
+                        <div id="column-1aec286" class="col-xs-12 fw-column">
+
+                            <div class="fw-divider-space " style="margin-top: 11px;"></div>
+
+                            <div class="special-heading text-center">
+                                <h2 class="section_header margin_0  ">
+	<span class=" bold text-transform-none">
+		Strategy, design	</span>
+                                </h2>
+                            </div>
+
+                            <div class="fw-divider-space " style="margin-top: 5px;"></div>
+
+                            <div class="special-heading text-center">
+                                <h4 class="section_header margin_0  ">
+	<span class=" extra-light text-transform-none">
+		and a bit of magic	</span>
+                                </h4>
+                            </div>
+
+                            <div class="fw-divider-space " style="margin-top: 75px;"></div>
+
+                            <div class="owl-carousel shortcode-service owl-loaded owl-drag owl-theme"
+                                 data-autoplay="false" data-autoplaytimeout="3000" data-loop="true" data-nav="0"
+                                 data-margin="60" data-responsive-xs="1" data-responsive-sm="2" data-responsive-md="3"
+                                 data-responsive-lg="3">
+
+
+                                <div class="owl-stage-outer">
+                                    <div class="owl-stage"
+                                         style="transform: translate3d(-1950px, 0px, 0px); transition: all 0s ease 0s; width: 7410px;">
+                                        <div class="owl-item cloned" style="width: 330px; margin-right: 60px;">
+                                            <div class="owl-carousel-item our-services shortcode ">
+                                                <div class="service_item vertical-item content-padding big-padding with_background text-center overflow-hidden">
+                                                    <div class="service_icon">
+                                                        <a class="permalink"
+                                                           href="http://webdesign-finder.com/hi5clive/service/digital-marketing/">
+                                                            <img th:src="@{/images/service_icon_2.png}" alt=""> </a>
+                                                    </div>
+                                                    <div class="item-content">
+                                                        <h5 class="entry-title">
+                                                            <a href="http://webdesign-finder.com/hi5clive/service/digital-marketing/">
+                                                                Digital Marketing </a>
+                                                        </h5>
+                                                        <div class="excerpt">
+                                                            <p>Ut agam scriptorem contentiones per, quo laoreet invidunt
+                                                                no.</p>
+                                                        </div>
+                                                        <a href="http://webdesign-finder.com/hi5clive/service/digital-marketing/"
+                                                           class="theme_button inverse color2 read-more">More</a>
+                                                    </div><!-- eof .item-content -->
+                                                </div><!-- eof .teaser -->    </div>
+                                        </div>
+                                        <div class="owl-item cloned" style="width: 330px; margin-right: 60px;">
+                                            <div class="owl-carousel-item our-services shortcode ">
+                                                <div class="service_item vertical-item content-padding big-padding with_background text-center overflow-hidden">
+                                                    <div class="service_icon">
+                                                        <a class="permalink"
+                                                           href="http://webdesign-finder.com/hi5clive/service/social-media-marketing/">
+                                                            <img th:src="@{/images/service_icon_3.png}" alt=""> </a>
+                                                    </div>
+                                                    <div class="item-content">
+                                                        <h5 class="entry-title">
+                                                            <a href="http://webdesign-finder.com/hi5clive/service/social-media-marketing/">
+                                                                Social Media Marketing </a>
+                                                        </h5>
+                                                        <div class="excerpt">
+                                                            <p>Ea per mutat putant equidem, ea vim erroribus
+                                                                rationibus.</p>
+                                                        </div>
+                                                        <a href="http://webdesign-finder.com/hi5clive/service/social-media-marketing/"
+                                                           class="theme_button inverse color2 read-more">More</a>
+                                                    </div><!-- eof .item-content -->
+                                                </div><!-- eof .teaser -->    </div>
+                                        </div>
+                                        <div class="owl-item cloned" style="width: 330px; margin-right: 60px;">
+                                            <div class="owl-carousel-item our-services ">
+                                                <div class="service_item vertical-item content-padding big-padding with_background text-center overflow-hidden">
+                                                    <div class="service_icon">
+                                                        <a class="permalink"
+                                                           href="http://webdesign-finder.com/hi5clive/service/search-engine-reputation-management/">
+                                                            <img th:src="@{/images/service_icon_4.png}" alt=""> </a>
+                                                    </div>
+                                                    <div class="item-content">
+                                                        <h5 class="entry-title">
+                                                            <a href="http://webdesign-finder.com/hi5clive/service/search-engine-reputation-management/">
+                                                                SER Management </a>
+                                                        </h5>
+                                                        <div class="excerpt">
+                                                            <p>Ex his vero perpetua, cu est inimicus accusamus, ut porro
+                                                                harum populo.</p>
+                                                        </div>
+                                                        <a href="http://webdesign-finder.com/hi5clive/service/search-engine-reputation-management/"
+                                                           class="theme_button inverse color2 read-more">More</a>
+                                                    </div><!-- eof .item-content -->
+                                                </div><!-- eof .teaser -->    </div>
+                                        </div>
+                                        <div class="owl-item cloned" style="width: 330px; margin-right: 60px;">
+                                            <div class="owl-carousel-item our-services ">
+                                                <div class="service_item vertical-item content-padding big-padding with_background text-center overflow-hidden">
+                                                    <div class="service_icon">
+                                                        <a class="permalink"
+                                                           href="http://webdesign-finder.com/hi5clive/service/website-building/">
+                                                            <img th:src="@{/images/service_icon_5.png}" alt=""> </a>
+                                                    </div>
+                                                    <div class="item-content">
+                                                        <h5 class="entry-title">
+                                                            <a href="http://webdesign-finder.com/hi5clive/service/website-building/">
+                                                                Website Building </a>
+                                                        </h5>
+                                                        <div class="excerpt">
+                                                            <p>Duo ex veri aliquando, no pri disputationi signiferumque,
+                                                                commodo feugiat. </p>
+                                                        </div>
+                                                        <a href="http://webdesign-finder.com/hi5clive/service/website-building/"
+                                                           class="theme_button inverse color2 read-more">More</a>
+                                                    </div><!-- eof .item-content -->
+                                                </div><!-- eof .teaser -->    </div>
+                                        </div>
+                                        <div class="owl-item cloned" style="width: 330px; margin-right: 60px;">
+                                            <div class="owl-carousel-item our-services ">
+                                                <div class="service_item vertical-item content-padding big-padding with_background text-center overflow-hidden">
+                                                    <div class="service_icon">
+                                                        <a class="permalink"
+                                                           href="http://webdesign-finder.com/hi5clive/service/brand-management/">
+                                                            <img th:src="@{/images/service_icon_6.png}" alt=""> </a>
+                                                    </div>
+                                                    <div class="item-content">
+                                                        <h5 class="entry-title">
+                                                            <a href="http://webdesign-finder.com/hi5clive/service/brand-management/">
+                                                                Brand Management </a>
+                                                        </h5>
+                                                        <div class="excerpt">
+                                                            <p>Accusamus similique ius te. Augue errem gubergren ei has,
+                                                                quando amet ceteros.</p>
+                                                        </div>
+                                                        <a href="http://webdesign-finder.com/hi5clive/service/brand-management/"
+                                                           class="theme_button inverse color2 read-more">More</a>
+                                                    </div><!-- eof .item-content -->
+                                                </div><!-- eof .teaser -->    </div>
+                                        </div>
+                                        <div class="owl-item active" style="width: 330px; margin-right: 60px;">
+                                            <div class="owl-carousel-item shortcode ">
+                                                <div class="service_item vertical-item content-padding big-padding with_background text-center overflow-hidden">
+                                                    <div class="service_icon">
+                                                        <a class="permalink"
+                                                           href="http://webdesign-finder.com/hi5clive/service/explore/">
+                                                            <img th:src="@{/images/service_icon_1.png}" alt=""> </a>
+                                                    </div>
+                                                    <div class="item-content">
+                                                        <h5 class="entry-title">
+                                                            <a href="http://webdesign-finder.com/hi5clive/service/explore/">
+                                                                Explore </a>
+                                                        </h5>
+                                                        <div class="excerpt">
+                                                            <p>Design Sprints<br>
+                                                                Product Strategy<br>
+                                                                UX Strategy</p>
+                                                        </div>
+                                                        <a href="http://webdesign-finder.com/hi5clive/service/explore/"
+                                                           class="theme_button inverse color2 read-more">More</a>
+                                                    </div><!-- eof .item-content -->
+                                                </div><!-- eof .teaser -->    </div>
+                                        </div>
+                                        <div class="owl-item active" style="width: 330px; margin-right: 60px;">
+                                            <div class="owl-carousel-item shortcode ">
+                                                <div class="service_item vertical-item content-padding big-padding with_background text-center overflow-hidden">
+                                                    <div class="service_icon">
+                                                        <a class="permalink"
+                                                           href="http://webdesign-finder.com/hi5clive/service/create/">
+                                                            <img th:src="@{/images/service_icon_2.png}" alt=""> </a>
+                                                    </div>
+                                                    <div class="item-content">
+                                                        <h5 class="entry-title">
+                                                            <a href="http://webdesign-finder.com/hi5clive/service/create/">
+                                                                Create </a>
+                                                        </h5>
+                                                        <div class="excerpt">
+                                                            <p>Information Architecture<br>
+                                                                UX/UI Design<br>
+                                                                Branding</p>
+                                                        </div>
+                                                        <a href="http://webdesign-finder.com/hi5clive/service/create/"
+                                                           class="theme_button inverse color2 read-more">More</a>
+                                                    </div><!-- eof .item-content -->
+                                                </div><!-- eof .teaser -->    </div>
+                                        </div>
+                                        <div class="owl-item" style="width: 330px; margin-right: 60px;">
+                                            <div class="owl-carousel-item shortcode ">
+                                                <div class="service_item vertical-item content-padding big-padding with_background text-center overflow-hidden">
+                                                    <div class="service_icon">
+                                                        <a class="permalink"
+                                                           href="http://webdesign-finder.com/hi5clive/service/learn/">
+                                                            <img th:src="@{/images/service_icon_3.png}" alt=""> </a>
+                                                    </div>
+                                                    <div class="item-content">
+                                                        <h5 class="entry-title">
+                                                            <a href="http://webdesign-finder.com/hi5clive/service/learn/">
+                                                                Learn </a>
+                                                        </h5>
+                                                        <div class="excerpt">
+                                                            <p>Prototyping<br>
+                                                                User Testing<br>
+                                                                Learning</p>
+                                                        </div>
+                                                        <a href="http://webdesign-finder.com/hi5clive/service/learn/"
+                                                           class="theme_button inverse color2 read-more">More</a>
+                                                    </div><!-- eof .item-content -->
+                                                </div><!-- eof .teaser -->    </div>
+                                        </div>
+                                        <div class="owl-item" style="width: 330px; margin-right: 60px;">
+                                            <div class="owl-carousel-item our-services shortcode ">
+                                                <div class="service_item vertical-item content-padding big-padding with_background text-center overflow-hidden">
+                                                    <div class="service_icon">
+                                                        <a class="permalink"
+                                                           href="http://webdesign-finder.com/hi5clive/service/search-engine-optimisation/">
+                                                            <img th:src="@{/images/service_icon_1.png}" alt=""> </a>
+                                                    </div>
+                                                    <div class="item-content">
+                                                        <h5 class="entry-title">
+                                                            <a href="http://webdesign-finder.com/hi5clive/service/search-engine-optimisation/">
+                                                                Search Engine Optimisation </a>
+                                                        </h5>
+                                                        <div class="excerpt">
+                                                            <p>Duo magna harum ei. Eu principes interesset vix, ad sea
+                                                                tale vidit. </p>
+                                                        </div>
+                                                        <a href="http://webdesign-finder.com/hi5clive/service/search-engine-optimisation/"
+                                                           class="theme_button inverse color2 read-more">More</a>
+                                                    </div><!-- eof .item-content -->
+                                                </div><!-- eof .teaser -->    </div>
+                                        </div>
+                                        <div class="owl-item" style="width: 330px; margin-right: 60px;">
+                                            <div class="owl-carousel-item our-services shortcode ">
+                                                <div class="service_item vertical-item content-padding big-padding with_background text-center overflow-hidden">
+                                                    <div class="service_icon">
+                                                        <a class="permalink"
+                                                           href="http://webdesign-finder.com/hi5clive/service/digital-marketing/">
+                                                            <img th:src="@{/images/service_icon_2.png}" alt=""> </a>
+                                                    </div>
+                                                    <div class="item-content">
+                                                        <h5 class="entry-title">
+                                                            <a href="http://webdesign-finder.com/hi5clive/service/digital-marketing/">
+                                                                Digital Marketing </a>
+                                                        </h5>
+                                                        <div class="excerpt">
+                                                            <p>Ut agam scriptorem contentiones per, quo laoreet invidunt
+                                                                no.</p>
+                                                        </div>
+                                                        <a href="http://webdesign-finder.com/hi5clive/service/digital-marketing/"
+                                                           class="theme_button inverse color2 read-more">More</a>
+                                                    </div><!-- eof .item-content -->
+                                                </div><!-- eof .teaser -->    </div>
+                                        </div>
+                                        <div class="owl-item" style="width: 330px; margin-right: 60px;">
+                                            <div class="owl-carousel-item our-services shortcode ">
+                                                <div class="service_item vertical-item content-padding big-padding with_background text-center overflow-hidden">
+                                                    <div class="service_icon">
+                                                        <a class="permalink"
+                                                           href="http://webdesign-finder.com/hi5clive/service/social-media-marketing/">
+                                                            <img th:src="@{/images/service_icon_3.png}" alt=""> </a>
+                                                    </div>
+                                                    <div class="item-content">
+                                                        <h5 class="entry-title">
+                                                            <a href="http://webdesign-finder.com/hi5clive/service/social-media-marketing/">
+                                                                Social Media Marketing </a>
+                                                        </h5>
+                                                        <div class="excerpt">
+                                                            <p>Ea per mutat putant equidem, ea vim erroribus
+                                                                rationibus.</p>
+                                                        </div>
+                                                        <a href="http://webdesign-finder.com/hi5clive/service/social-media-marketing/"
+                                                           class="theme_button inverse color2 read-more">More</a>
+                                                    </div><!-- eof .item-content -->
+                                                </div><!-- eof .teaser -->    </div>
+                                        </div>
+                                        <div class="owl-item" style="width: 330px; margin-right: 60px;">
+                                            <div class="owl-carousel-item our-services ">
+                                                <div class="service_item vertical-item content-padding big-padding with_background text-center overflow-hidden">
+                                                    <div class="service_icon">
+                                                        <a class="permalink"
+                                                           href="http://webdesign-finder.com/hi5clive/service/search-engine-reputation-management/">
+                                                            <img th:src="@{/images/service_icon_4.png}" alt=""> </a>
+                                                    </div>
+                                                    <div class="item-content">
+                                                        <h5 class="entry-title">
+                                                            <a href="http://webdesign-finder.com/hi5clive/service/search-engine-reputation-management/">
+                                                                SER Management </a>
+                                                        </h5>
+                                                        <div class="excerpt">
+                                                            <p>Ex his vero perpetua, cu est inimicus accusamus, ut porro
+                                                                harum populo.</p>
+                                                        </div>
+                                                        <a href="http://webdesign-finder.com/hi5clive/service/search-engine-reputation-management/"
+                                                           class="theme_button inverse color2 read-more">More</a>
+                                                    </div><!-- eof .item-content -->
+                                                </div><!-- eof .teaser -->    </div>
+                                        </div>
+                                        <div class="owl-item" style="width: 330px; margin-right: 60px;">
+                                            <div class="owl-carousel-item our-services ">
+                                                <div class="service_item vertical-item content-padding big-padding with_background text-center overflow-hidden">
+                                                    <div class="service_icon">
+                                                        <a class="permalink"
+                                                           href="http://webdesign-finder.com/hi5clive/service/website-building/">
+                                                            <img th:src="@{/images/service_icon_5.png}" alt=""> </a>
+                                                    </div>
+                                                    <div class="item-content">
+                                                        <h5 class="entry-title">
+                                                            <a href="http://webdesign-finder.com/hi5clive/service/website-building/">
+                                                                Website Building </a>
+                                                        </h5>
+                                                        <div class="excerpt">
+                                                            <p>Duo ex veri aliquando, no pri disputationi signiferumque,
+                                                                commodo feugiat. </p>
+                                                        </div>
+                                                        <a href="http://webdesign-finder.com/hi5clive/service/website-building/"
+                                                           class="theme_button inverse color2 read-more">More</a>
+                                                    </div><!-- eof .item-content -->
+                                                </div><!-- eof .teaser -->    </div>
+                                        </div>
+                                        <div class="owl-item" style="width: 330px; margin-right: 60px;">
+                                            <div class="owl-carousel-item our-services ">
+                                                <div class="service_item vertical-item content-padding big-padding with_background text-center overflow-hidden">
+                                                    <div class="service_icon">
+                                                        <a class="permalink"
+                                                           href="http://webdesign-finder.com/hi5clive/service/brand-management/">
+                                                            <img th:src="@{/images/service_icon_6.png}" alt=""> </a>
+                                                    </div>
+                                                    <div class="item-content">
+                                                        <h5 class="entry-title">
+                                                            <a href="http://webdesign-finder.com/hi5clive/service/brand-management/">
+                                                                Brand Management </a>
+                                                        </h5>
+                                                        <div class="excerpt">
+                                                            <p>Accusamus similique ius te. Augue errem gubergren ei has,
+                                                                quando amet ceteros.</p>
+                                                        </div>
+                                                        <a href="http://webdesign-finder.com/hi5clive/service/brand-management/"
+                                                           class="theme_button inverse color2 read-more">More</a>
+                                                    </div><!-- eof .item-content -->
+                                                </div><!-- eof .teaser -->    </div>
+                                        </div>
+                                        <div class="owl-item cloned" style="width: 330px; margin-right: 60px;">
+                                            <div class="owl-carousel-item shortcode ">
+                                                <div class="service_item vertical-item content-padding big-padding with_background text-center overflow-hidden">
+                                                    <div class="service_icon">
+                                                        <a class="permalink"
+                                                           href="http://webdesign-finder.com/hi5clive/service/explore/">
+                                                            <img th:src="@{/images/service_icon_1.png}" alt=""> </a>
+                                                    </div>
+                                                    <div class="item-content">
+                                                        <h5 class="entry-title">
+                                                            <a href="http://webdesign-finder.com/hi5clive/service/explore/">
+                                                                Explore </a>
+                                                        </h5>
+                                                        <div class="excerpt">
+                                                            <p>Design Sprints<br>
+                                                                Product Strategy<br>
+                                                                UX Strategy</p>
+                                                        </div>
+                                                        <a href="http://webdesign-finder.com/hi5clive/service/explore/"
+                                                           class="theme_button inverse color2 read-more">More</a>
+                                                    </div><!-- eof .item-content -->
+                                                </div><!-- eof .teaser -->    </div>
+                                        </div>
+                                        <div class="owl-item cloned" style="width: 330px; margin-right: 60px;">
+                                            <div class="owl-carousel-item shortcode ">
+                                                <div class="service_item vertical-item content-padding big-padding with_background text-center overflow-hidden">
+                                                    <div class="service_icon">
+                                                        <a class="permalink"
+                                                           href="http://webdesign-finder.com/hi5clive/service/create/">
+                                                            <img th:src="@{/images/service_icon_2.png}" alt=""> </a>
+                                                    </div>
+                                                    <div class="item-content">
+                                                        <h5 class="entry-title">
+                                                            <a href="http://webdesign-finder.com/hi5clive/service/create/">
+                                                                Create </a>
+                                                        </h5>
+                                                        <div class="excerpt">
+                                                            <p>Information Architecture<br>
+                                                                UX/UI Design<br>
+                                                                Branding</p>
+                                                        </div>
+                                                        <a href="http://webdesign-finder.com/hi5clive/service/create/"
+                                                           class="theme_button inverse color2 read-more">More</a>
+                                                    </div><!-- eof .item-content -->
+                                                </div><!-- eof .teaser -->    </div>
+                                        </div>
+                                        <div class="owl-item cloned" style="width: 330px; margin-right: 60px;">
+                                            <div class="owl-carousel-item shortcode ">
+                                                <div class="service_item vertical-item content-padding big-padding with_background text-center overflow-hidden">
+                                                    <div class="service_icon">
+                                                        <a class="permalink"
+                                                           href="http://webdesign-finder.com/hi5clive/service/learn/">
+                                                            <img th:src="@{/images/service_icon_3.png}" alt=""> </a>
+                                                    </div>
+                                                    <div class="item-content">
+                                                        <h5 class="entry-title">
+                                                            <a href="http://webdesign-finder.com/hi5clive/service/learn/">
+                                                                Learn </a>
+                                                        </h5>
+                                                        <div class="excerpt">
+                                                            <p>Prototyping<br>
+                                                                User Testing<br>
+                                                                Learning</p>
+                                                        </div>
+                                                        <a href="http://webdesign-finder.com/hi5clive/service/learn/"
+                                                           class="theme_button inverse color2 read-more">More</a>
+                                                    </div><!-- eof .item-content -->
+                                                </div><!-- eof .teaser -->    </div>
+                                        </div>
+                                        <div class="owl-item cloned" style="width: 330px; margin-right: 60px;">
+                                            <div class="owl-carousel-item our-services shortcode ">
+                                                <div class="service_item vertical-item content-padding big-padding with_background text-center overflow-hidden">
+                                                    <div class="service_icon">
+                                                        <a class="permalink"
+                                                           href="http://webdesign-finder.com/hi5clive/service/search-engine-optimisation/">
+                                                            <img th:src="@{/images/service_icon_1.png}" alt=""> </a>
+                                                    </div>
+                                                    <div class="item-content">
+                                                        <h5 class="entry-title">
+                                                            <a href="http://webdesign-finder.com/hi5clive/service/search-engine-optimisation/">
+                                                                Search Engine Optimisation </a>
+                                                        </h5>
+                                                        <div class="excerpt">
+                                                            <p>Duo magna harum ei. Eu principes interesset vix, ad sea
+                                                                tale vidit. </p>
+                                                        </div>
+                                                        <a href="http://webdesign-finder.com/hi5clive/service/search-engine-optimisation/"
+                                                           class="theme_button inverse color2 read-more">More</a>
+                                                    </div><!-- eof .item-content -->
+                                                </div><!-- eof .teaser -->    </div>
+                                        </div>
+                                        <div class="owl-item cloned" style="width: 330px; margin-right: 60px;">
+                                            <div class="owl-carousel-item our-services shortcode ">
+                                                <div class="service_item vertical-item content-padding big-padding with_background text-center overflow-hidden">
+                                                    <div class="service_icon">
+                                                        <a class="permalink"
+                                                           href="http://webdesign-finder.com/hi5clive/service/digital-marketing/">
+                                                            <img th:src="@{/images/service_icon_2.png}" alt=""> </a>
+                                                    </div>
+                                                    <div class="item-content">
+                                                        <h5 class="entry-title">
+                                                            <a href="http://webdesign-finder.com/hi5clive/service/digital-marketing/">
+                                                                Digital Marketing </a>
+                                                        </h5>
+                                                        <div class="excerpt">
+                                                            <p>Ut agam scriptorem contentiones per, quo laoreet invidunt
+                                                                no.</p>
+                                                        </div>
+                                                        <a href="http://webdesign-finder.com/hi5clive/service/digital-marketing/"
+                                                           class="theme_button inverse color2 read-more">More</a>
+                                                    </div><!-- eof .item-content -->
+                                                </div><!-- eof .teaser -->    </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="owl-nav disabled">
+                                    <div class="owl-prev">prev</div>
+                                    <div class="owl-next">next</div>
+                                </div>
+                                <div class="owl-dots disabled"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <footer id="footer"
+                class="page_footer footer_1 section_padding_top_100 section_padding_bottom_100 columns_padding_25"
+                style="background-image: url(//webdesign-finder.com/hi5clive/wp-content/uploads/2018/08/footer_bg.jpg)">
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-xs-12 col-sm-10 col-md-8 col-md-offset-2 to_animate" data-animation="fadeInUp">
+                        <div class="widget-odd widget-first widget-1 footer-special-first widget widget-theme-wrapper  text-center">
+                            <div id="mwt_banner-2" class="widget widget_banner"><a
+                                    href="http://webdesign-finder.com/hi5clive/contacts" target="_blank">
+                                <img th:src="@{/images/footer_banner.png}"
+                                     alt="//webdesign-finder.com/hi5clive/wp-content/uploads/2018/08/footer_banner.png">
+                            </a>
+                            </div>
+                        </div>
+                        <div class="widget-even widget-last widget-2 footer-special-last widget widget-theme-wrapper  text-center">
+                            <div id="nav_menu-3" class="widget widget_nav_menu">
+                                <div class="menu-footer-menu-container">
+                                    <ul id="menu-footer-menu" class="menu">
+                                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4155">
+                                            <a href="https://www.facebook.com/goodsolutionsgroupKG">Facebook</a></li>
+                                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4156">
+                                            <a href="http://linkedin.com/#">Telegram</a></li>
+                                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4157">
+                                            <a href="https://www.instagram.com/goodsolutions.group">Instagram</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </footer>
+        <section class="page_copyright section_padding_15">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-12 text-center">
+                        <p class="grey">Copyright 2020</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+<!-- Instagram Feed JS -->
+<script type="text/javascript">
+    var sbiajaxurl = "http://webdesign-finder.com/hi5clive/wp-admin/admin-ajax.php";
+</script>
+<script type="text/javascript">
+    /* <![CDATA[ */
+    var sb_instagram_js_options = {"sb_instagram_at": "", "font_method": "svg"};
+    /* ]]> */
+</script>
+<script type="text/javascript" th:src="@{/js/sb-instagram.min.js}"></script>
+<script type="text/javascript" th:src="@{/js/bootstrap.min.js}"></script>
+<script type="text/javascript" th:src="@{/js/jquery.appear.js}"></script>
+<script type="text/javascript" th:src="@{/js/hoverIntent.min.js}"></script>
+<script type="text/javascript" th:src="@{/js/superfish.js}"></script>
+<script type="text/javascript" th:src="@{/js/jquery.easing.1.3.js}"></script>
+<script type="text/javascript" th:src="@{/js/jquery.ui.totop.js}"></script>
+<script type="text/javascript" th:src="@{/js/jquery.localscroll.min.js}"></script>
+<script type="text/javascript" th:src="@{/js/jquery.scrollTo.min.js}"></script>
+<script type="text/javascript" th:src="@{/js/jquery.scrollbar.min.js}"></script>
+<script type="text/javascript" th:src="@{/js/jquery.parallax-1.1.3.js}"></script>
+<script type="text/javascript" th:src="@{/js/jquery.easypiechart.min.js}"></script>
+<script type="text/javascript" th:src="@{/js/bootstrap-progressbar.min.js}"></script>
+<script type="text/javascript" th:src="@{/js/jquery.countTo.js}"></script>
+<script type="text/javascript" th:src="@{/js/jquery.prettyPhoto.js}"></script>
+<script type="text/javascript" th:src="@{/js/jquery.countdown.min.js}"></script>
+<script type="text/javascript" th:src="@{/js/isotope.pkgd.min.js}"></script>
+<script type="text/javascript" th:src="@{/js/owl.carousel.min.js}"></script>
+<script type="text/javascript" th:src="@{/js/jquery.flexslider.min.js}"></script>
+<script type="text/javascript" th:src="@{/js/price-slider.min.js}"></script>
+<script type="text/javascript" th:src="@{/js/jquery.cookie.js}"></script>
+<script type="text/javascript" th:src="@{/js/plugins.js}"></script>
+<script type="text/javascript" th:src="@{/js/main1.js}"></script>
+<script type="text/javascript" th:src="@{/js/wp-embed.min.js}"></script>
+<a href="http://webdesign-finder.com/hi5clive/about/#" id="toTop" style="display: inline;"><span id="toTopHover"
+                                                                                                 style="opacity: 0;"></span>To
+    Top</a></body>
+</html>

@@ -1,0 +1,34 @@
+.gallery {
+  .gallery-filters {
+    a{
+      padding: 5px 20px;
+    }
+  }
+  .item-content{
+    h3,h4,h2{
+      font-size: 30px;
+      line-height: 1;
+      font-weight: bold;
+      text-transform: none;
+      margin: 10px 0 0 0;
+      overflow: hidden;
+      //white-space: nowrap;
+      //text-overflow: ellipsis;
+      padding: 0 15px;
+    }
+    & > div:last-child{
+      margin-top: 10px;
+    }
+  }
+  .social-icons{
+    margin-top: 44px!important;
+    margin-bottom: 40px;
+    .icon-styled{
+      margin: 5px;
+    }
+  }
+  .vertical-item .item-media + .item-content {
+    padding-top: 22px;
+    padding-bottom: 18px;
+  }
+}

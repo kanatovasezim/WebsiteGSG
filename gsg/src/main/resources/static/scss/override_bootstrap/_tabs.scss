@@ -1,0 +1,58 @@
+/* bootstrap tabs*/
+.nav-tabs {
+  border-bottom: none;
+
+  .nav-link {
+    border-radius: 0;
+    border: 1px solid $borderColor;
+    margin-right: 1px;
+
+    &:hover {
+      opacity: 0.9;
+    }
+  }
+
+  .nav-item.show .nav-link,
+  .nav-link.active {
+    border-color: $colorMain;
+    background: $colorMain;
+    color: $lightColor;
+  }
+}
+
+@media (max-width: 550px) {
+  .nav-tabs{
+    flex-direction: column;
+    a.active{
+      position: relative;
+    }
+  }
+}
+
+.nav-link {
+  @include small-text();
+  padding: 15px 28px;
+  color: $darkgreyColor;
+  .small-tabs & {
+    padding: 10px 15px;
+  }
+}
+
+.tab-content {
+  border: 1px solid $borderColor;
+  padding: 40px 40px;
+}
+
+.tab-pane {
+  .media {
+    img {
+      max-width: 40%;
+      &:first-child {
+        margin-right: 10px;
+      }
+    }
+    h3, h4, h5 {
+      font-weight: 900;
+    }
+  }
+}

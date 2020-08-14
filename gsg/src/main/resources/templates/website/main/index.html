@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en" xmlns:th="http://www.thymeleaf.org">
+<!--<![endif]-->
+
+<head>
+    <title>way2go - Bootstrap 4 HTML template</title>
+    <meta charset="utf-8">
+    <!--[if IE]>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <![endif]-->
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+    <link rel="stylesheet" th:href="@{/css/bootstrap.min.css}">
+    <link rel="stylesheet" th:href="@{/css/animations.css}">
+    <link rel="stylesheet" th:href="@{/css/font-awesome.css}">
+    <link rel="stylesheet" th:href="@{/css/main1.css}" class="color-switcher-link">
+    <script th:src="@{/vendor/modernizr-custom.js}"></script>
+
+    <!--[if lt IE 9]>
+    <script th:src="@{/vendor/html5shiv.min.js}"></script>
+    <script th:src="@{/vendor/respond.min.js}"></script>
+    <script th:src="@{/vendor/jquery-1.12.4.min.js}"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+<!-- search modal -->
+<!--<div class="modal" tabindex="-1" role="dialog" aria-labelledby="search_modal" id="search_modal">-->
+<!--    <button type="button" class="close" data-dismiss="modal" aria-label="Close">-->
+<!--        <span aria-hidden="true">&times;</span>-->
+<!--    </button>-->
+<!--    <div class="widget widget_search">-->
+<!--        <form method="get" class="searchform search-form" action="/">-->
+<!--            <div class="form-group">-->
+<!--                <input type="text" value="" name="search" class="form-control" placeholder="Search keyword"-->
+<!--                       id="modal-search-input">-->
+<!--            </div>-->
+<!--            <button type="submit" class="btn">Search</button>-->
+<!--        </form>-->
+<!--    </div>-->
+<!--</div>-->
+
+<!-- Unyson messages modal -->
+<!--	<div class="modal fade" tabindex="-1" role="dialog" id="messages_modal">-->
+<!--		<div class="fw-messages-wrap ds p-normal">-->
+<!--			&lt;!&ndash; Uncomment this UL with LI to show messages in modal popup to your user: &ndash;&gt;-->
+<!--		<ul class="list-unstyled">-->
+<!--			<li>Message To User</li>-->
+<!--		</ul>-->
+
+<!--		</div>-->
+<!--	</div>-->
+
+<!-- wrappers for visual page editor and boxed version of template -->
+<div id="canvas">
+    <div id="box_wrapper">
+
+        <!-- template sections -->
+        <div class="header_absolute">
+            <!-- header with two Bootstrap columns - left for logo and right for navigation and includes (search, social icons, additional links and buttons etc -->
+            <header class="page_header ds">
+                <div class="container-fluid">
+                    <div class="row align-items-center">
+                        <div class="col-xl-3 col-lg-4 col-md-5 col-11">
+                            <a href=".." class="logo">
+                                <img th:src="@{/images/gsg.png}"  height="70" width="100" alt="">
+                            </a>
+                        </div>
+                        <div class="col-xl-9 col-lg-8 col-md-7 col-1">
+                            <div class="nav-wrap">
+                                <!-- main nav start -->
+                                <nav class="top-nav">
+                                    <ul class="nav sf-menu">
+                                        <li>
+                                            <a th:href="@{/website/index}">Главная</a>
+                                        </li>
+                                        <li>
+                                            <a th:href="@{/templates/website/aboutUs}">О нас</a>
+                                        </li>
+                                        <li>
+                                            <a th:href="@{/website/service}">Услуги</a>
+                                            <ul>
+                                                <li>
+                                                    <a th:href="@{/website/service}">Маркетинг</a>
+                                                </li>
+                                                <li>
+                                                    <a th:href="@{/website/service}">Консалтинг</a>
+                                                </li>
+                                                <li>
+                                                    <a th:href="@{/website/service}">Продажи</a>
+                                                </li>
+                                                <li>
+                                                    <a th:href="@{/website/service}">Организация мероприятий</a>
+                                                </li>
+                                                <li>
+                                                    <a th:href="@{/website/service}">Продакшн</a>
+                                                </li>
+                                                <li>
+                                                    <a th:href="@{/website/service}">Упаковка бизнеса</a>
+                                                </li>
+                                                <li>
+                                                    <a th:href="@{/website/service}">Разработка IT продуктов</a>
+                                                </li>
+                                                <li>
+                                                    <a th:href="@{/website/service}">Реклама</a>
+                                                </li>
+                                                <li>
+                                                    <a th:href="@{/website/service}">Дизайн</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+
+                                        <li>
+                                            <a th:href="@{/website/client}">Клиенты</a>
+                                        </li>
+                                        <li>
+                                            <a th:href="@{/website/contact}">Контакты</a>
+                                        </li>
+
+                                    </ul>
+                                </nav>
+                                <!-- eof main nav -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- header toggler -->
+                <span class="toggle_menu"><span></span></span>
+            </header>
+
+        </div>
+
+        <section class="ds page_slider">
+            <div class="flexslider">
+                <ul class="slides">
+                    <li class="cs text-center">
+                        <div class="flex-bg ds z-5 s-overlay">
+                            <video muted loop id="myVideo">
+                                <source th:src="@{/video/video.mp4}" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="intro_layers_wrapper">
+                                        <div class="intro_layers">
+                                            <div class="intro_layer" data-animation="fadeInRight">
+                                                <img th:src="@{/images/gsg.png}" height="350" width="500" class="pull-left" alt="slide-img">
+                                            </div>
+                                            <div class="intro_layer text-right" data-animation="fadeInLeft">
+                                                <h6>
+                                                    <p class="title"><span class="blue">G</span>ood</p><br>
+                                                    <p class="title"><span class="blue">S</span>olutions</p><br>
+                                                    <p class="title"><span class="blue">C</span>ompany</p><br>
+                                                </h6>
+                                            </div>
+                                        </div> <!-- eof .intro_layers -->
+                                    </div> <!-- eof .intro_layers_wrapper -->
+                                </div> <!-- eof .col-* -->
+                            </div><!-- eof .row -->
+                        </div><!-- eof .container-fluid -->
+                    </li>
+
+                    <li class="cs text-center" >
+                        <div class="flex-bg ds z-5 s-overlay"
+                             style="background: url('images/slide2.jpg') no-repeat center / cover"></div>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="intro_layers_wrapper">
+                                        <div class="intro_layers">
+                                            <div class="intro_layer" data-animation="fadeInRight">
+                                                <img th:src="@{/images/gsg.png}" height="350" width="500" class="pull-left" alt="slide-img">
+                                            </div>
+                                            <div class="intro_layer text-right" data-animation="fadeInLeft">
+                                                <h6>
+                                                    <p class="title"><span class="blue">G</span>ood</p><br>
+                                                    <p class="title"><span class="blue">S</span>olutions</p><br>
+                                                    <p class="title"><span class="blue">C</span>ompany</p><br>
+                                                </h6>
+                                            </div>
+                                        </div> <!-- eof .intro_layers -->
+                                    </div> <!-- eof .intro_layers_wrapper -->
+                                </div> <!-- eof .col-* -->
+                            </div><!-- eof .row -->
+                        </div><!-- eof .container-fluid -->
+                    </li>
+                    <li class="cs text-center">
+                        <div class="flex-bg ds z-5 s-overlay" style="background: url('images/slide3.jpg') no-repeat center / cover"></div>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="intro_layers_wrapper">
+                                        <div class="intro_layers">
+                                            <div class="intro_layer" data-animation="fadeInRight">
+                                                <img th:src="@{/images/gsg.png}" height="350" width="500" class="pull-left" alt="slide-img">
+                                            </div>
+                                            <div class="intro_layer text-right" data-animation="fadeInLeft">
+                                                <h6>
+                                                    <p class="title"><span class="blue">G</span>ood</p><br>
+                                                    <p class="title"><span class="blue">S</span>olutions</p><br>
+                                                    <p class="title"><span class="blue">C</span>ompany</p><br>
+                                                </h6>
+                                            </div>
+                                        </div> <!-- eof .intro_layers -->
+                                    </div> <!-- eof .intro_layers_wrapper -->
+                                </div> <!-- eof .col-* -->
+                            </div><!-- eof .row -->
+                        </div><!-- eof .container-fluid -->
+                    </li>
+
+
+                </ul>
+            </div> <!-- eof flexslider -->
+        </section>
+
+
+        <section class="ds c-gutter-0 container-px-0">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-12 mt-0 text-center">
+                        <div class="portfolio-carousel">
+                            <div class="additional_image">
+                                <img th:src="@{/images/logo-carousel.png}" height="450" width="600" alt="logo">
+                            </div>
+                            <div id="widget_portfolio_carousel" class="owl-carousel  small-gallery-carousel"
+                                 data-margin="0" data-autoplay="false" data-responsive-lg="4" data-responsive-md="3"
+                                 data-responsive-sm="2" data-responsive-xs="1" data-nav="0" data-loop="none"
+                                 data-filters=".carousel_filters">
+                                <a th:src="@{/images/square/branding1.jpg}" class="photoswipe-link advertise"
+                                   data-gal="prettyPhoto[gal]" data-width="800" data-height="800">
+                                    <img th:src="@{/images/square/branding1.jpg}" alt="brand-img">
+                                    <span class="carousel-content">
+											<span>Laoreet Consulatu</span>
+										</span>
+                                </a>
+                                <a th:href="@{/images/square/branding2.jpg}" class="photoswipe-link web"
+                                   data-gal="prettyPhoto[gal]" data-width="800" data-height="800">
+                                    <img th:src="@{/images/square/branding2.jpg}" alt="brand-img">
+                                    <span class="carousel-content">
+											<span>Laoreet Consulatu</span>
+										</span>
+                                </a>
+                                <a th:href="@{/images/square/branding3.jpg}" class="photoswipe-link advertise"
+                                   data-gal="prettyPhoto[gal]" data-width="800" data-height="800">
+                                    <img th:src="@{/images/square/branding3.jpg}" alt="brand-img">
+                                    <span class="carousel-content">
+											<span>Laoreet Consulatu</span>
+										</span>
+                                </a>
+                                <a th:href="@{/images/square/branding4.jpg}" class="photoswipe-link branding"
+                                   data-gal="prettyPhoto[gal]" data-width="800" data-height="800">
+                                    <img th:src="@{/images/square/branding4.jpg}" alt="brand-img">
+                                    <span class="carousel-content">
+											<span>Laoreet Consulatu</span>
+										</span>
+                                </a>
+                                <a th:href="@{/images/square/branding5.jpg}" class="photoswipe-link advertise"
+                                   data-gal="prettyPhoto[gal]" data-width="800" data-height="800">
+                                    <img th:src="@{/images/square/branding5.jpg}" alt="brand-img">
+                                    <span class="carousel-content">
+											<span>Laoreet Consulatu</span>
+										</span>
+                                </a>
+                                <a th:href="@{/images/square/branding6.jpg}" class="photoswipe-link branding"
+                                   data-gal="prettyPhoto[gal]" data-width="800" data-height="800">
+                                    <img th:src="@{/images/square/branding6.jpg}" alt="brand-img">
+                                    <span class="carousel-content">
+											<span>Laoreet Consulatu</span>
+										</span>
+                                </a>
+                                <a th:href="@{/images/square/branding7.jpg}" class="photoswipe-link advertise"
+                                   data-gal="prettyPhoto[gal]" data-width="800" data-height="800">
+                                    <img th:src="@{/images/square/branding7.jpg}" alt="brand-img">
+                                    <span class="carousel-content">
+											<span>Laoreet Consulatu</span>
+										</span>
+                                </a>
+                                <a th:href="@{/images/square/branding8.jpg}" class="photoswipe-link branding"
+                                   data-gal="prettyPhoto[gal]" data-width="800" data-height="800">
+                                    <img th:src="@{/images/square/branding8.jpg}" alt="brand-img">
+                                    <span class="carousel-content">
+											<span>Laoreet Consulatu</span>
+										</span>
+                                </a>
+                                <a th:href="@{/images/square/branding9.jpg}" class="photoswipe-link web"
+                                   data-gal="prettyPhoto[gal]" data-width="800" data-height="800">
+                                    <img th:src="@{/images/square/branding9.jpg}" alt="brand-img">
+                                    <span class="carousel-content">
+											<span>Laoreet Consulatu</span>
+										</span>
+                                </a>
+                                <a th:href="@{/images/square/branding10.jpg}" class="photoswipe-link branding"
+                                   data-gal="prettyPhoto[gal]" data-width="800" data-height="800">
+                                    <img th:src="@{/images/square/branding10.jpg}" alt="brand-img">
+                                    <span class="carousel-content">
+											<span>Laoreet Consulatu</span>
+										</span>
+                                </a>
+                                <a th:href="@{/images/square/branding11.jpg}" class="photoswipe-link web"
+                                   data-gal="prettyPhoto[gal]" data-width="800" data-height="800">
+                                    <img th:src="@{/images/square/branding11.jpg}" alt="brand-img">
+                                    <span class="carousel-content">
+											<span>Laoreet Consulatu</span>
+										</span>
+                                </a>
+                                <a th:href="@{/images/square/branding12.jpg}" class="photoswipe-link branding"
+                                   data-gal="prettyPhoto[gal]" data-width="800" data-height="800">
+                                    <img th:src="@{/images/square/branding12.jpg}" alt="brand-img">
+                                    <span class="carousel-content">
+											<span>Laoreet Consulatu</span>
+										</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class=" portfolio-controls-wrap">
+                            <div class="portfolio-slider-wrap">
+                                <div class="owl-carousel-slider" id="widget_portfolio_carousel_slider"
+                                     data-items-count="6" data-carousel="#widget_portfolio_carousel">
+                                </div>
+                            </div>
+
+                            <div class="portfolio-shortcode-filters d-flex filters carousel_filters text-center">
+                                <a href="#" data-filter="*" class="selected">Все</a>
+                                <a href="#" data-filter=".web">СММ</a>
+                                <a href="#" data-filter=".branding">Сайты</a>
+                                <a href="#" data-filter=".advertise">Реклама</a>
+                            </div><!-- eof isotope_filters -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="team" class="ds  s-pt-lg-90 s-py-xl-90">
+            <h3 class="hidden"> Наша команда</h3>
+            <div class="container c-mb-0">
+                <div class="row">
+                    <div class="col-12 flex-column">
+                        <div class="team-slider-shortcode">
+                            <div class="team-slider-item active">
+                                <div class="team-slider-image animated fadeInLeft from-right">
+                                    <img th:src="@{/images/team/team_slide-1.png}" alt="team-slide">
+                                </div>
+                                <div class="team-slider-name">
+                                    <h3 class="slide-title">
+                                        <span>Бла-бла <span class="last">Бла-бла</span></span>
+                                    </h3>
+                                </div><!-- eof .team-slider-name -->
+                            </div><!-- eof .team-slider-item -->
+
+                            <div class="team-slider-item">
+                                <div class="team-slider-image animated fadeInRight from-right">
+                                    <img th:src="@{/images/team/team_slide-2.png}" alt="team-slide">
+                                </div>
+                                <div class="team-slider-name">
+                                    <h3 class="slide-title">
+                                        <span>Бла-бла <span class="last">Бла-бла</span></span>
+                                    </h3>
+                                </div><!-- eof .team-slider-name -->
+                            </div><!-- eof .team-slider-item -->
+
+                            <div class="team-slider-item">
+                                <div class="team-slider-image animated fadeInLeft from-right">
+                                    <img th:src="@{/images/team/team_slide-3.png}" alt="team-slide">
+                                </div>
+                                <div class="team-slider-name">
+                                    <h3 class="slide-title">
+                                        <span>Бла-бла <span class="last">Бла-бла</span></span>
+                                    </h3>
+                                </div><!-- eof .team-slider-name -->
+                            </div><!-- eof .team-slider-item -->
+
+                            <div class="team-slider-item">
+                                <div class="team-slider-image animated fadeInRight from-right">
+                                    <img th:src="@{/images/team/team_slide-4.png}" alt="team-slide">
+                                </div>
+                                <div class="team-slider-name">
+                                    <h3 class="slide-title">
+                                        <span>Бла-бла <span class="last">Бла-бла</span></span>
+                                    </h3>
+                                </div><!-- eof .team-slider-name -->
+                            </div><!-- eof .team-slider-item -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="bio" class="ds bio-parallax s-parallax ms s-pt-50 s-pt-md-80 s-py-lg-100 s-py-xl-200 c-gutter-15">
+            <h3 class="hidden">Bio</h3>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12 text-right">
+                        <div class="fw-divider-space mt-30"></div>
+                        <div class="special-heading text-center">
+                            <div class="section__header extra-light">
+                                <h2 class="text-transform-none">My <strong>Way<span class="color-main">2</span></strong> Bio</h2>
+                            </div>
+                        </div>
+                        <div class="fw-divider-space hidden-above-lg mt-65"></div>
+                        <div class="fw-divider-space hidden-below-lg mt-30"></div>
+                        <div class="author-bio-shortcode">
+                            <div id="author_bio_shortcode_carusel" class="owl-carousel-bio" data-owl-carousel-slider="#author_bio_shortcode_slider" data-items="1" data-responsive-xs="1" data-responsive-sm="1" data-responsive-md="1" data-responsive-lg="1">
+                                <div class="bio-text">
+                                    The first experience in digital entrepreneuring, freelance projects for local companies.
+                                </div>
+                                <div class="bio-text">
+                                    Started working at the entrepreneuring company and passed all way from Junior Manager to
+                                    Senior
+                                </div>
+                                <div class="bio-text">
+                                    My partners and I founded <strong>Hi<span class="color-main">5</span></strong>entrepreneuring company.
+                                </div>
+                                <div class="bio-text">
+                                    <strong>Hi<span class="color-main">5</span></strong>got a leading position in the Internet advertising market.
+                                </div>
+                                <div class="bio-text">
+                                    I joined Power Home Remodeling as an innovator marketer.
+                                </div>
+                            </div>
+                            <div class="custom-nav"></div>
+
+                            <div class="owl-carousel-slider" id="author_bio_shortcode_slider" data-items-count="4" data-carousel="#author_bio_shortcode_carusel">
+                                <div class="author-bio-flex">
+                                    <span class="year-dot active"></span>
+                                    <span class="year-dot "></span>
+                                    <span class="year-dot "></span>
+                                    <span class="year-dot "></span>
+                                    <span class="year-dot "></span>
+                                </div>
+
+                                <div class="author-bio-flex">
+                                    <span class="year-label active">2012</span>
+                                    <span class="year-label ">2013</span>
+                                    <span class="year-label ">2015</span>
+                                    <span class="year-label ">2017</span>
+                                    <span class="year-label ">2018</span>
+                                </div>
+
+                                <div class="author-bio-word">
+                                    Biography
+                                </div>
+                            </div>
+                        </div>
+                        <div class="fw-divider-space hidden-above-lg mt-75"></div>
+                        <div class="fw-divider-space hidden-below-lg mt-130"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about"
+                 class="ds s-pt-50 s-pt-md-140 s-pt-xl-240 s-pb-50 s-pb-md-60 s-pb-lg-100 s-pb-xl-160 c-gutter-60">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-lg-6 animate" data-animation="fadeInRight" data-delay="150">
+                        <div class="img-wrap text-center">
+                            <img th:src="@{/images/about_home.jpg}" alt="above img">
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-lg-6 animate" data-animation="fadeInLeft" data-delay="150">
+                        <div class="fw-divider-space  hidden-md hidden-sm hidden-xs hidden-lg mt-75"></div>
+                        <div class="fw-divider-space  hidden-lg mt-30"></div>
+                        <!--<div class="section__header push-right">-->
+                        <!--<h2 class="mt-0 mb-0"><span>Hi<span class="color-main">5</span>, I’m Clive,</span><span class=" extra-light"> a Digital</span></h2>-->
+                        <!--<h2 class="mt-0 mb-0 extra-light">Enterpreneur based in</h2>-->
+                        <!--<h2 class="mt-0 extra-light">San Diego...</h2>-->
+                        <!--</div>-->
+                        <div class="section__header">
+                            <h2><span>Уважаемый <span class="color-main">создатель бизнеса</span></span>
+                            </h2>
+                        </div>
+                        <div class="fw-divider-space hidden-above-lg mt-30"></div>
+                        <div class="fw-divider-space hidden-below-lg mt-60"></div>
+                        <div class="section__content">
+                            <p class="fs-24"><span class="color-main2 bold">Хотите увеличить свой доход? Хотите стаильный поток клиентов?
+                            Но дают ли обычные методы рекламы те же результаты, что и раньше?
+                                Вы хотите получить преимущество перед конкурентами?</span></p> <br>
+                            <p class="fs-24">В Good Solutions Group мы гордимся тем что создаем решения для владельцев бизнеса,
+                            таких как Вы, которые хотят извлечь выгоду из социальных сетей и нового цифрового века бизнеса.
+                            Мы хотим, чтобы прибыль вашего бизнеса вслетела до небес, чтобы Вы наконец смогли "выключиться" и
+                                насладиться плодами своей работы</p>
+                        </div>
+                        <div class="fw-divider-space hidden-above-lg mt-40"></div>
+                        <div class="fw-divider-space hidden-below-lg mt-70"></div>
+                        <div class="section__btn">
+                            <!--<button type="button" class="btn btn-outline-maincolor push-right color_white">about</button>-->
+                            <button type="button" class="btn btn-outline-maincolor color_white">about</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacts" class="ds s-pb-60 c-gutter-60">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-lg-6 position-relative z-index-2 animate" data-animation="fadeInLeft"
+                         data-delay="150">
+                        <div class="fw-divider-space  hidden-md hidden-sm hidden-xs hidden-lg mt-70"></div>
+                        <div class="section__header">
+                            <h2 class="push-left"><span class="extra-light">Свяжись с <span
+                                    class="bold">Good Solutions Groups</span></span></h2>
+                        </div>
+                        <div class="fw-divider-space hidden-above-lg mt-30"></div>
+                        <div class="fw-divider-space hidden-below-lg mt-60"></div>
+                        <div class="section__content c-gutter-20">
+                            <form method="get">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" name="user_name" placeholder="Ф.И.О"
+                                           required>
+                                </div>
+                                <div class="form-group">
+                                    <div class="row ">
+                                        <div class="col-xs-12 col-lg-6">
+                                            <input type="tel" class="form-control" name="tel" placeholder="Номер телефона"
+                                                   required>
+                                        </div>
+                                        <div class="col-xs-12 col-lg-6">
+                                            <input type="email" class="form-control" name="Почта"
+                                                   placeholder="email address" required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <textarea class="form-control" rows="6" placeholder="Ваше письмо"
+                                              name="message"></textarea>
+                                </div>
+                                <div class="fw-divider-space hidden-above-lg mt-45"></div>
+                                <div class="fw-divider-space hidden-below-lg mt-65"></div>
+                                <div class="section__btn">
+                                    <button type="button" class="btn btn-outline-maincolor color_white">Отправить</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-lg-6 animate" data-animation="fadeInRight" data-delay="150">
+                        <div class="fw-divider-space hidden-above-lg mt-60"></div>
+                        <div class="img-wrap text-sm-center">
+                            <img th:src="@{/images/contact_home.jpg}" alt="above img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="strategy" class="ds  s-pb-50 s-pb-md-100 s-pb-lg-130 s-pb-xl-240 c-gutter-15">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 animate" data-animation="fadeInDown" data-delay="150">
+                        <div class="fw-divider-space hidden-above-lg mt-35"></div>
+                        <div class="section__header text-center">
+                            <h2 class="mb-0">
+                                <span class="bold">Что вы получаете</span><br>
+                            </h2>
+                            <h4 class="mt-2">
+                                <span class="thin"> при сотрудничестве с нами</span>
+                            </h4>
+                            <div class="fw-divider-space hidden-above-lg mt-50"></div>
+                            <div class="fw-divider-space hidden-below-lg mt-75"></div>
+                            <div class="owl-carousel shortcode-service" data-autoplay="false"
+                                 data-autoplaytimeout="3000" data-loop="true" data-nav="0" data-margin="60"
+                                 data-responsive-xs="1" data-responsive-sm="2" data-responsive-md="3"
+                                 data-responsive-lg="3">
+                                <div class="owl-carousel-item shortcode bg-darkblue2">
+                                    <div class="service_item content-padding text-center overflow-hidden">
+                                        <div class="fw-divider-space mt-80"></div>
+                                        <div class="service_icon">
+                                            <a class="permalink" href="#">
+                                                <img th:src="@{/images/icon_shortcode1.png}" alt="icon shortcode">
+                                            </a>
+                                        </div>
+                                        <div class="item-content">
+                                            <h5 class="entry-title ">
+                                                <a href="#">
+                                                    Маркетинг
+                                                </a>
+                                            </h5>
+                                            <div class="color-font">
+                                                <p>Разработка маркетинговой стратегии<br/>
+                                                    Бизнес-планирование<br/>
+                                                    R&D</p>
+                                            </div>
+                                        </div><!-- eof .item-content -->
+                                    </div><!-- eof .teaser -->
+                                </div>
+
+                                <div class="owl-carousel-item shortcode bg-darkblue2">
+                                    <div class="service_item content-padding text-center overflow-hidden">
+                                        <div class="fw-divider-space mt-80"></div>
+                                        <div class="service_icon">
+                                            <a class="permalink" href="#">
+                                                <img th:src="@{/images/icon_shortcode2.png}" alt="icon shortcode">
+                                            </a>
+                                        </div>
+                                        <div class="item-content">
+                                            <h5 class="entry-title ">
+                                                <a href="#">
+                                                    Продвижение бренда
+                                                </a>
+                                            </h5>
+                                            <div class="color-font">
+                                                <p>Анализ конкурентов<br/>
+                                                    Разработка фирменного стиля<br/>
+                                                    SEO, комплексное продвижение сайта<br/>
+                                                    Продвижение в соц сетях, SMM<br/>
+                                                    Разработка чат-ботов<br/>
+                                                    Организация мероприятий<br/>
+                                                </p>
+                                            </div>
+                                        </div><!-- eof .item-content -->
+                                    </div><!-- eof .teaser -->
+                                </div>
+
+                                <div class="owl-carousel-item shortcode bg-darkblue2">
+                                    <div class="service_item content-padding text-center overflow-hidden">
+                                        <div class="fw-divider-space mt-80"></div>
+                                        <div class="service_icon">
+                                            <a class="permalink" href="#">
+                                                <img th:src="@{/images/icon_shortcode3.png}" alt="icon shortcode">
+                                            </a>
+                                        </div>
+                                        <div class="item-content">
+                                            <h5 class="entry-title ">
+                                                <a href="#">
+                                                    Продакшн
+                                                </a>
+                                            </h5>
+                                            <div class="color-font">
+                                                <p>Фото<br/>
+                                                    Видео<br/>
+                                                    TikTok<br/>
+                                                    Youtube<br/>
+                                                    Портфолио
+                                                </p>
+                                            </div>
+                                        </div><!-- eof .item-content -->
+                                    </div><!-- eof .teaser -->
+                                </div>
+
+                                <div class="owl-carousel-item shortcode bg-darkblue2">
+                                    <div class="service_item content-padding text-center overflow-hidden">
+                                        <div class="fw-divider-space mt-80"></div>
+                                        <div class="service_icon">
+                                            <a class="permalink" href="#">
+                                                <img th:src="@{/images/icon_shortcode1.png}" alt="icon shortcode">
+                                            </a>
+                                        </div>
+                                        <div class="item-content">
+                                            <h5 class="entry-title ">
+                                                <a href="#">
+                                                    Explore
+                                                </a>
+                                            </h5>
+                                            <div class="color-font">
+                                                <p>Design Sprints<br/>
+                                                    Product Strategy<br/>
+                                                    UX Strategy</p>
+                                            </div>
+                                        </div><!-- eof .item-content -->
+                                    </div><!-- eof .teaser -->
+                                </div>
+
+                                <div class="owl-carousel-item shortcode bg-darkblue2">
+                                    <div class="service_item content-padding text-center overflow-hidden">
+                                        <div class="fw-divider-space mt-80"></div>
+                                        <div class="service_icon">
+                                            <a class="permalink" href="#">
+                                                <img th:src="@{/images/icon_shortcode2.png}" alt="icon shortcode">
+                                            </a>
+                                        </div>
+                                        <div class="item-content">
+                                            <h5 class="entry-title ">
+                                                <a href="#">
+                                                    Explore
+                                                </a>
+                                            </h5>
+                                            <div class="color-font">
+                                                <p>Design Sprints<br/>
+                                                    Product Strategy<br/>
+                                                    UX Strategy</p>
+                                            </div>
+                                        </div><!-- eof .item-content -->
+                                    </div><!-- eof .teaser -->
+                                </div>
+
+                                <div class="owl-carousel-item shortcode bg-darkblue2">
+                                    <div class="service_item content-padding text-center overflow-hidden">
+                                        <div class="fw-divider-space mt-80"></div>
+                                        <div class="service_icon">
+                                            <a class="permalink" href="#">
+                                                <img th:src="@{/images/icon_shortcode3.png}" alt="icon shortcode">
+                                            </a>
+                                        </div>
+                                        <div class="item-content">
+                                            <h5 class="entry-title">
+                                                <a href="#">
+                                                    Explore
+                                                </a>
+                                            </h5>
+                                            <div class="color-font">
+                                                <p>Design Sprints<br/>
+                                                    Product Strategy<br/>
+                                                    UX Strategy</p>
+                                            </div>
+                                        </div><!-- eof .item-content -->
+                                    </div><!-- eof .teaser -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+<!--        <section id="video"-->
+<!--                 class="ds s-overlay s-py-50 s-py-md-100 s-py-xl-200 c-gutter-15 s-parallax section_home video-shortcode">-->
+<!--            <h3 class="hidden"> Video</h3>-->
+<!--            <div class="container-fluid">-->
+<!--                <div class="row">-->
+<!--                    <div class="col-12 text-center">-->
+<!--                        <div class="fw-divider-space  hidden-above-lg mt-20"></div>-->
+<!--                        <div class="icon-styled color_white round icon-bordered bordered w2 br-color_1">-->
+<!--                            <a href="#" class="themeicon-play center-class"></a>-->
+<!--                        </div>-->
+<!--                        <div class="section__header mt-30 color_white">-->
+<!--                            <h4>Why You Need Me</h4>-->
+<!--                            <p class="text-uppercase bold mt-0 c-mt-md-10 c-mt-lg-10 c-mt-xl-10 ">VIDEO PRESENTATION</p>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </section>-->
+
+        <footer class="page_footer ds s-py-md-0 s-py-lg-50 s-py-xl-100 c-gutter-25">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-sm-10 offset-sm-1 col-md-8 offset-md-2 text-center animate"
+                         data-animation="fadeInUp">
+                        <h4 class="back">мы в<br>сетях</h4>
+                        <div class="page_footer__wrap">
+                            <div class="widget widget_banner">
+                                <p class="spec">goodsolutionskg<span class="light">@</span>gmail.com</p>
+                            </div>
+                            <div class="fw-divider-space  hidden-lg mt--20"></div>
+                            <div class="menu-footer">
+                                <ul class="menu-footer__nav">
+                                    <li>
+                                        <a href="https://www.facebook.com/goodsolutionsgroupKG">facebook</a>
+                                    </li>
+                                    <li>
+                                        <a href="http://linkedin.com/#">telegram</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.instagram.com/goodsolutions.group">instagram</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="fw-divider-space hidden-below-sm  hidden-lg mt-30"></div>
+                </div>
+            </div>
+        </footer>
+
+        <section class="page_copyright ds s-py-12">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="fw-divider-space d-none d-lg-block mt-15"></div>
+                    <div class="col-md-12 text-center fs-12">
+                        <p>Copyright <span class="copyright_year">2020</span></p>
+                    </div>
+                    <div class="fw-divider-space d-none d-lg-block mt-15"></div>
+                </div>
+            </div>
+        </section>
+
+
+    </div><!-- eof #box_wrapper -->
+</div><!-- eof #canvas -->
+
+
+<script type="text/javascript" th:src="@{/js/compressed.js}"></script>
+<script type="text/javascript" th:src="@{/js/main.js}"></script>
+<style>
+    span.blue {
+        color: #2b3b55;
+    }
+</style>
+
+</body>
+
+</html>
