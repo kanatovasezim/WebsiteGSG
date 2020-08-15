@@ -1,0 +1,79 @@
+<div
+        lang="en"
+        xmlns="http://www.w3.org/1999/xhtml"
+        xmlns:th="http://www.thymeleaf.org">
+    <div th:fragment="webSiteMenu">
+        <div class="header_absolute">
+            <!-- header with two Bootstrap columns - left for logo and right for navigation and includes (search, social icons, additional links and buttons etc -->
+            <header class="page_header ds">
+                <div class="container-fluid">
+                    <div class="row align-items-center">
+                        <div class="col-xl-3 col-lg-4 col-md-5 col-11">
+                            <a href="../../.." class="logo">
+                                <img th:src="@{/static/images/gsg.png}" height="70" width="100" alt="">
+                            </a>
+                        </div>
+                        <div class="col-xl-9 col-lg-8 col-md-7 col-1">
+                            <div class="nav-wrap">
+                                <!-- main nav start -->
+                                <nav class="top-nav">
+                                    <ul class="nav sf-menu">
+                                        <li>
+                                            <a th:href="@{/website/index}">Главная</a>
+                                        </li>
+                                        <li>
+                                            <a th:href="@{/templates/website/aboutUs}">О нас</a>
+                                        </li>
+                                        <li>
+                                            <a th:href="@{/website/service}">Услуги</a>
+                                            <ul>
+                                                <li>
+                                                    <a th:href="@{/website/service}">Маркетинг</a>
+                                                </li>
+                                                <li>
+                                                    <a th:href="@{/website/service}">Консалтинг</a>
+                                                </li>
+                                                <li>
+                                                    <a th:href="@{/website/service}">Продажи</a>
+                                                </li>
+                                                <li>
+                                                    <a th:href="@{/website/service}">Организация мероприятий</a>
+                                                </li>
+                                                <li>
+                                                    <a th:href="@{/website/service}">Продакшн</a>
+                                                </li>
+                                                <li>
+                                                    <a th:href="@{/website/service}">Упаковка бизнеса</a>
+                                                </li>
+                                                <li>
+                                                    <a th:href="@{/website/service}">Разработка IT продуктов</a>
+                                                </li>
+                                                <li>
+                                                    <a th:href="@{/website/service}">Реклама</a>
+                                                </li>
+                                                <li>
+                                                    <a th:href="@{/website/service}">Дизайн</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+
+                                        <li>
+                                            <a th:href="@{/website/client}">Клиенты</a>
+                                        </li>
+                                        <li>
+                                            <a th:href="@{/website/contact}">Контакты</a>
+                                        </li>
+
+                                    </ul>
+                                </nav>
+                                <!-- eof main nav -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- header toggler -->
+                <span class="toggle_menu"><span></span></span>
+            </header>
+        </div>
+    </div>
+</div>

@@ -1,146 +1,9 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>
-<html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>
-<html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>
-<html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!-->
-<html class="no-js" lang="en" xmlns:th="http://www.thymeleaf.org">
-<!--<![endif]-->
-
-<head>
-    <title>way2go - Bootstrap 4 HTML template</title>
-    <meta charset="utf-8">
-    <!--[if IE]>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <![endif]-->
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-
-    <link rel="stylesheet" th:href="@{/css/bootstrap.min.css}">
-    <link rel="stylesheet" th:href="@{/css/animations.css}">
-    <link rel="stylesheet" th:href="@{/css/font-awesome.css}">
-    <link rel="stylesheet" th:href="@{/css/main1.css}" class="color-switcher-link">
-    <script th:src="@{/vendor/modernizr-custom.js}"></script>
-
-    <!--[if lt IE 9]>
-    <script th:src="@{/vendor/html5shiv.min.js}"></script>
-    <script th:src="@{/vendor/respond.min.js}"></script>
-    <script th:src="@{/vendor/jquery-1.12.4.min.js}"></script>
-    <![endif]-->
-
-</head>
-
-<body>
-<!-- search modal -->
-<!--<div class="modal" tabindex="-1" role="dialog" aria-labelledby="search_modal" id="search_modal">-->
-<!--    <button type="button" class="close" data-dismiss="modal" aria-label="Close">-->
-<!--        <span aria-hidden="true">&times;</span>-->
-<!--    </button>-->
-<!--    <div class="widget widget_search">-->
-<!--        <form method="get" class="searchform search-form" action="/">-->
-<!--            <div class="form-group">-->
-<!--                <input type="text" value="" name="search" class="form-control" placeholder="Search keyword"-->
-<!--                       id="modal-search-input">-->
-<!--            </div>-->
-<!--            <button type="submit" class="btn">Search</button>-->
-<!--        </form>-->
-<!--    </div>-->
-<!--</div>-->
-
-<!-- Unyson messages modal -->
-<!--	<div class="modal fade" tabindex="-1" role="dialog" id="messages_modal">-->
-<!--		<div class="fw-messages-wrap ds p-normal">-->
-<!--			&lt;!&ndash; Uncomment this UL with LI to show messages in modal popup to your user: &ndash;&gt;-->
-<!--		<ul class="list-unstyled">-->
-<!--			<li>Message To User</li>-->
-<!--		</ul>-->
-
-<!--		</div>-->
-<!--	</div>-->
-
-<!-- wrappers for visual page editor and boxed version of template -->
-<div id="canvas">
-    <div id="box_wrapper">
-
-        <!-- template sections -->
-        <div class="header_absolute">
-            <!-- header with two Bootstrap columns - left for logo and right for navigation and includes (search, social icons, additional links and buttons etc -->
-            <header class="page_header ds">
-                <div class="container-fluid">
-                    <div class="row align-items-center">
-                        <div class="col-xl-3 col-lg-4 col-md-5 col-11">
-                            <a href=".." class="logo">
-                                <img th:src="@{/images/gsg.png}"  height="70" width="100" alt="">
-                            </a>
-                        </div>
-                        <div class="col-xl-9 col-lg-8 col-md-7 col-1">
-                            <div class="nav-wrap">
-                                <!-- main nav start -->
-                                <nav class="top-nav">
-                                    <ul class="nav sf-menu">
-                                        <li>
-                                            <a th:href="@{/website/index}">Главная</a>
-                                        </li>
-                                        <li>
-                                            <a th:href="@{/templates/website/aboutUs}">О нас</a>
-                                        </li>
-                                        <li>
-                                            <a th:href="@{/website/service}">Услуги</a>
-                                            <ul>
-                                                <li>
-                                                    <a th:href="@{/website/service}">Маркетинг</a>
-                                                </li>
-                                                <li>
-                                                    <a th:href="@{/website/service}">Консалтинг</a>
-                                                </li>
-                                                <li>
-                                                    <a th:href="@{/website/service}">Продажи</a>
-                                                </li>
-                                                <li>
-                                                    <a th:href="@{/website/service}">Организация мероприятий</a>
-                                                </li>
-                                                <li>
-                                                    <a th:href="@{/website/service}">Продакшн</a>
-                                                </li>
-                                                <li>
-                                                    <a th:href="@{/website/service}">Упаковка бизнеса</a>
-                                                </li>
-                                                <li>
-                                                    <a th:href="@{/website/service}">Разработка IT продуктов</a>
-                                                </li>
-                                                <li>
-                                                    <a th:href="@{/website/service}">Реклама</a>
-                                                </li>
-                                                <li>
-                                                    <a th:href="@{/website/service}">Дизайн</a>
-                                                </li>
-                                            </ul>
-                                        </li>
-
-                                        <li>
-                                            <a th:href="@{/website/client}">Клиенты</a>
-                                        </li>
-                                        <li>
-                                            <a th:href="@{/website/contact}">Контакты</a>
-                                        </li>
-
-                                    </ul>
-                                </nav>
-                                <!-- eof main nav -->
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- header toggler -->
-                <span class="toggle_menu"><span></span></span>
-            </header>
-
-        </div>
-
+<layout:html xmlns:layout="http://www.w3.org/1999/xhtml"
+             xmlns:th="http://www.thymeleaf.org"
+             lang="en"
+             layout:decorate="~{website/layout}">
+    <div layout:fragment="website-content">
         <section class="ds page_slider">
             <div class="flexslider">
                 <ul class="slides">
@@ -224,7 +87,6 @@
                 </ul>
             </div> <!-- eof flexslider -->
         </section>
-
 
         <section class="ds c-gutter-0 container-px-0">
             <div class="container-fluid">
@@ -397,6 +259,7 @@
                 </div>
             </div>
         </section>
+
         <section id="bio" class="ds bio-parallax s-parallax ms s-pt-50 s-pt-md-80 s-py-lg-100 s-py-xl-200 c-gutter-15">
             <h3 class="hidden">Bio</h3>
             <div class="container-fluid">
@@ -724,81 +587,5 @@
             </div>
         </section>
 
-<!--        <section id="video"-->
-<!--                 class="ds s-overlay s-py-50 s-py-md-100 s-py-xl-200 c-gutter-15 s-parallax section_home video-shortcode">-->
-<!--            <h3 class="hidden"> Video</h3>-->
-<!--            <div class="container-fluid">-->
-<!--                <div class="row">-->
-<!--                    <div class="col-12 text-center">-->
-<!--                        <div class="fw-divider-space  hidden-above-lg mt-20"></div>-->
-<!--                        <div class="icon-styled color_white round icon-bordered bordered w2 br-color_1">-->
-<!--                            <a href="#" class="themeicon-play center-class"></a>-->
-<!--                        </div>-->
-<!--                        <div class="section__header mt-30 color_white">-->
-<!--                            <h4>Why You Need Me</h4>-->
-<!--                            <p class="text-uppercase bold mt-0 c-mt-md-10 c-mt-lg-10 c-mt-xl-10 ">VIDEO PRESENTATION</p>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--        </section>-->
-
-        <footer class="page_footer ds s-py-md-0 s-py-lg-50 s-py-xl-100 c-gutter-25">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 col-sm-10 offset-sm-1 col-md-8 offset-md-2 text-center animate"
-                         data-animation="fadeInUp">
-                        <h4 class="back">мы в<br>сетях</h4>
-                        <div class="page_footer__wrap">
-                            <div class="widget widget_banner">
-                                <p class="spec">goodsolutionskg<span class="light">@</span>gmail.com</p>
-                            </div>
-                            <div class="fw-divider-space  hidden-lg mt--20"></div>
-                            <div class="menu-footer">
-                                <ul class="menu-footer__nav">
-                                    <li>
-                                        <a href="https://www.facebook.com/goodsolutionsgroupKG">facebook</a>
-                                    </li>
-                                    <li>
-                                        <a href="http://linkedin.com/#">telegram</a>
-                                    </li>
-                                    <li>
-                                        <a href="https://www.instagram.com/goodsolutions.group">instagram</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="fw-divider-space hidden-below-sm  hidden-lg mt-30"></div>
-                </div>
-            </div>
-        </footer>
-
-        <section class="page_copyright ds s-py-12">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="fw-divider-space d-none d-lg-block mt-15"></div>
-                    <div class="col-md-12 text-center fs-12">
-                        <p>Copyright <span class="copyright_year">2020</span></p>
-                    </div>
-                    <div class="fw-divider-space d-none d-lg-block mt-15"></div>
-                </div>
-            </div>
-        </section>
-
-
-    </div><!-- eof #box_wrapper -->
-</div><!-- eof #canvas -->
-
-
-<script type="text/javascript" th:src="@{/js/compressed.js}"></script>
-<script type="text/javascript" th:src="@{/js/main.js}"></script>
-<style>
-    span.blue {
-        color: #2b3b55;
-    }
-</style>
-
-</body>
-
-</html>
+    </div>
+</layout:html>
