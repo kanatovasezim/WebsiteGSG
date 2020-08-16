@@ -4,6 +4,7 @@
              lang="en"
              layout:decorate="~{website/layout}">
     <div layout:fragment="website-content">
+        <!--        <div th:replace="website/js-css-fragments/about-header::about-header"></div>-->
         <div th:replace="website/js-css-fragments/about-header::about-header"></div>
 
         <div class="preloader">
@@ -24,10 +25,11 @@
                                     <div class="fw-divider-space " style="margin-top: 50px;"></div>
 
                                     <div class="img-wrap "><img th:src="@{/images/about_home.jpg}"
-                                                                alt="//webdesign-finder.com/hi5clive/wp-content/uploads/2018/09/about_home.jpg">
+                                                                alt="">
                                     </div>
                                 </div>
-                                <div id="column-bb575c3" class="col-xs-12 col-md-6 to_animate fw-column animated fadeInRight"
+                                <div id="column-bb575c3"
+                                     class="col-xs-12 col-md-6 to_animate fw-column animated fadeInRight"
                                      data-animation="fadeInRight">
 
                                     <div class="fw-divider-space  hidden-md hidden-sm hidden-xs"
@@ -57,8 +59,10 @@
                                     <div class="fw-divider-space  hidden-lg hidden-md" style="margin-top: 30px;"></div>
 
                                     <div class="text-block shortcode font24">
-                                        <p><strong class="highlight2">My goal is to help people build better and more meaningful
-                                            products.</strong> My work ranges from strategic planning and rough prototyping in
+                                        <p><strong class="highlight2">My goal is to help people build better and more
+                                            meaningful
+                                            products.</strong> My work ranges from strategic planning and rough
+                                            prototyping in
                                             the early stages, to creating a strong visual design language, all of which
                                             increases the value of both the brand and the product.</p></div>
 
@@ -67,7 +71,7 @@
 
                                     <div class="fw-divider-space  hidden-lg hidden-md" style="margin-top: 30px;"></div>
 
-                                    <a href="http://webdesign-finder.com/hi5clive/about" target="_self"
+                                    <a href="" target="_self"
                                        class="theme_button inverse color1 theme_button push-right">
                                         About</a>
                                 </div>
@@ -78,7 +82,7 @@
                              class="fw-main-row  section_padding_top_130 section_padding_bottom_130 columns_padding_15 parallax fullwidth-section background_cover"
                              style="background-position: 50% 2px;">
                         <h3 class="hidden"> Bio</h3>
-                        <div class="container-fluid">
+                        <div class="container-fluid" style="margin-left: 160px">
                             <div class="row">
                                 <div id="column-47157dc" class="col-xs-12 text-right fw-column">
 
@@ -101,14 +105,14 @@
                                         <div class="fw-theme-steps steps-1">
                                             <div class="fw-theme-step-wrap">
                                                 <div class="fw-step-left-part">
-                                                    <div class="year">2013</div>
+                                                    <div class="year">2017</div>
                                                     <h2 class="step-title">Beginning</h2>
                                                 </div>
                                                 <div class="fw-step-center-part">
                                                     <div id="card-5f31871688263" class="fw-step-img-wrap">
                                                         <img width="600" height="600" th:src="@{/images/step-1.jpg}"
-                                                             class="attachment-hi5clive-square size-hi5clive-square" alt=""
-                                                             srcset="http://webdesign-finder.com/hi5clive/wp-content/uploads/2018/10/step-1.jpg 600w, http://webdesign-finder.com/hi5clive/wp-content/uploads/2018/10/step-1-150x150.jpg 150w, http://webdesign-finder.com/hi5clive/wp-content/uploads/2018/10/step-1-300x300.jpg 300w"
+                                                             class="attachment-hi5clive-square size-hi5clive-square"
+                                                             alt=""
                                                              sizes="(max-width: 600px) 100vw, 600px"></div>
                                                 </div>
                                                 <div class="fw-step-right-part">
@@ -124,14 +128,14 @@
                                             </div>
                                             <div class="fw-theme-step-wrap">
                                                 <div class="fw-step-left-part">
-                                                    <div class="year">2014</div>
+                                                    <div class="year">2018</div>
                                                     <h2 class="step-title">Growth</h2>
                                                 </div>
                                                 <div class="fw-step-center-part">
                                                     <div id="card-5f3187168865f" class="fw-step-img-wrap">
                                                         <img width="600" height="600" th:src="@{/images/step-2.jpg}"
-                                                             class="attachment-hi5clive-square size-hi5clive-square" alt=""
-                                                             srcset="http://webdesign-finder.com/hi5clive/wp-content/uploads/2018/10/step-2.jpg 600w, http://webdesign-finder.com/hi5clive/wp-content/uploads/2018/10/step-2-150x150.jpg 150w, http://webdesign-finder.com/hi5clive/wp-content/uploads/2018/10/step-2-300x300.jpg 300w"
+                                                             class="attachment-hi5clive-square size-hi5clive-square"
+                                                             alt=""
                                                              sizes="(max-width: 600px) 100vw, 600px"></div>
                                                 </div>
                                                 <div class="fw-step-right-part">
@@ -140,48 +144,49 @@
                                                             Started working at entrepreneuring company. </p>
                                                         <span class="item_icon to_animate animated floating"
                                                               data-animation="floating">
-                                            <img th:src="@{/images/step_icon_2.png}" alt="4571">                                </span>
+                                            <img th:src="@{/images/step_icon_2.png}" alt="4571"></span>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="fw-theme-step-wrap">
                                                 <div class="fw-step-left-part">
-                                                    <div class="year">2016</div>
+                                                    <div class="year">2019</div>
                                                     <h2 class="step-title">Founding</h2>
                                                 </div>
                                                 <div class="fw-step-center-part">
                                                     <div id="card-5f318716889ef" class="fw-step-img-wrap">
                                                         <img width="600" height="600" th:src="@{/images/step-3.jpg}"
-                                                             class="attachment-hi5clive-square size-hi5clive-square" alt=""
-                                                             srcset="http://webdesign-finder.com/hi5clive/wp-content/uploads/2018/10/step-3.jpg 600w, http://webdesign-finder.com/hi5clive/wp-content/uploads/2018/10/step-3-150x150.jpg 150w, http://webdesign-finder.com/hi5clive/wp-content/uploads/2018/10/step-3-300x300.jpg 300w"
+                                                             class="attachment-hi5clive-square size-hi5clive-square"
+                                                             alt=""
                                                              sizes="(max-width: 600px) 100vw, 600px"></div>
                                                 </div>
                                                 <div class="fw-step-right-part">
                                                     <div class="step-text">
                                                         <p>
-                                                            My partners and I founded <strong>Hi<span class="highlight">5</span></strong>
-                                                            entrepreneuring company. </p>
-                                                        <span class="item_icon to_animate" data-animation="floating">
-                                            <img th:src="@{/images/step_icon_3.png}" alt="4572">                                </span>
+                                                            Started working at entrepreneuring company. </p>
+                                                        <span class="item_icon to_animate animated floating"
+                                                              data-animation="floating">
+                                            <img th:src="@{/images/step_icon_3.png}" alt="4572"></span>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="fw-theme-step-wrap">
                                                 <div class="fw-step-left-part">
-                                                    <div class="year">2018</div>
+                                                    <div class="year">2020</div>
                                                     <h2 class="step-title">Leading</h2>
                                                 </div>
                                                 <div class="fw-step-center-part">
                                                     <div id="card-5f31871688d6b" class="fw-step-img-wrap">
                                                         <img width="600" height="600" th:src="@{/images/step-4.jpg}"
-                                                             class="attachment-hi5clive-square size-hi5clive-square" alt=""
-                                                             srcset="http://webdesign-finder.com/hi5clive/wp-content/uploads/2018/10/step-4.jpg 600w, http://webdesign-finder.com/hi5clive/wp-content/uploads/2018/10/step-4-150x150.jpg 150w, http://webdesign-finder.com/hi5clive/wp-content/uploads/2018/10/step-4-300x300.jpg 300w"
+                                                             class="attachment-hi5clive-square size-hi5clive-square"
+                                                             alt=""
                                                              sizes="(max-width: 600px) 100vw, 600px"></div>
                                                 </div>
                                                 <div class="fw-step-right-part">
                                                     <div class="step-text">
                                                         <p>
-                                                            <strong>Hi<span class="highlight">5</span></strong> got a leading
+                                                            <strong>Hi<span class="highlight">5</span></strong> got a
+                                                            leading
                                                             position in the Internet advertising market. </p>
                                                         <span class="item_icon to_animate" data-animation="floating">
                                                                             </span>
@@ -229,7 +234,8 @@
 
                                     <div class="owl-carousel shortcode-service owl-loaded owl-drag owl-theme"
                                          data-autoplay="false" data-autoplaytimeout="3000" data-loop="true" data-nav="0"
-                                         data-margin="60" data-responsive-xs="1" data-responsive-sm="2" data-responsive-md="3"
+                                         data-margin="60" data-responsive-xs="1" data-responsive-sm="2"
+                                         data-responsive-md="3"
                                          data-responsive-lg="3">
 
 
@@ -241,19 +247,21 @@
                                                         <div class="service_item vertical-item content-padding big-padding with_background text-center overflow-hidden">
                                                             <div class="service_icon">
                                                                 <a class="permalink"
-                                                                   href="http://webdesign-finder.com/hi5clive/service/digital-marketing/">
-                                                                    <img th:src="@{/images/service_icon_2.png}" alt=""> </a>
+                                                                   href="">
+                                                                    <img th:src="@{/images/service_icon_2.png}" alt="">
+                                                                </a>
                                                             </div>
                                                             <div class="item-content">
                                                                 <h5 class="entry-title">
-                                                                    <a href="http://webdesign-finder.com/hi5clive/service/digital-marketing/">
+                                                                    <a href="">
                                                                         Digital Marketing </a>
                                                                 </h5>
                                                                 <div class="excerpt">
-                                                                    <p>Ut agam scriptorem contentiones per, quo laoreet invidunt
+                                                                    <p>Ut agam scriptorem contentiones per, quo laoreet
+                                                                        invidunt
                                                                         no.</p>
                                                                 </div>
-                                                                <a href="http://webdesign-finder.com/hi5clive/service/digital-marketing/"
+                                                                <a href=""
                                                                    class="theme_button inverse color2 read-more">More</a>
                                                             </div><!-- eof .item-content -->
                                                         </div><!-- eof .teaser -->    </div>
@@ -263,19 +271,20 @@
                                                         <div class="service_item vertical-item content-padding big-padding with_background text-center overflow-hidden">
                                                             <div class="service_icon">
                                                                 <a class="permalink"
-                                                                   href="http://webdesign-finder.com/hi5clive/service/social-media-marketing/">
-                                                                    <img th:src="@{/images/service_icon_3.png}" alt=""> </a>
+                                                                   href="">
+                                                                    <img th:src="@{/images/service_icon_3.png}" alt="">
+                                                                </a>
                                                             </div>
                                                             <div class="item-content">
                                                                 <h5 class="entry-title">
-                                                                    <a href="http://webdesign-finder.com/hi5clive/service/social-media-marketing/">
+                                                                    <a href="">
                                                                         Social Media Marketing </a>
                                                                 </h5>
                                                                 <div class="excerpt">
                                                                     <p>Ea per mutat putant equidem, ea vim erroribus
                                                                         rationibus.</p>
                                                                 </div>
-                                                                <a href="http://webdesign-finder.com/hi5clive/service/social-media-marketing/"
+                                                                <a href="">
                                                                    class="theme_button inverse color2 read-more">More</a>
                                                             </div><!-- eof .item-content -->
                                                         </div><!-- eof .teaser -->    </div>
@@ -285,19 +294,21 @@
                                                         <div class="service_item vertical-item content-padding big-padding with_background text-center overflow-hidden">
                                                             <div class="service_icon">
                                                                 <a class="permalink"
-                                                                   href="http://webdesign-finder.com/hi5clive/service/search-engine-reputation-management/">
-                                                                    <img th:src="@{/images/service_icon_4.png}" alt=""> </a>
+                                                                   href="">
+                                                                    <img th:src="@{/images/service_icon_4.png}" alt="">
+                                                                </a>
                                                             </div>
                                                             <div class="item-content">
                                                                 <h5 class="entry-title">
-                                                                    <a href="http://webdesign-finder.com/hi5clive/service/search-engine-reputation-management/">
+                                                                    <a href="">
                                                                         SER Management </a>
                                                                 </h5>
                                                                 <div class="excerpt">
-                                                                    <p>Ex his vero perpetua, cu est inimicus accusamus, ut porro
+                                                                    <p>Ex his vero perpetua, cu est inimicus accusamus,
+                                                                        ut porro
                                                                         harum populo.</p>
                                                                 </div>
-                                                                <a href="http://webdesign-finder.com/hi5clive/service/search-engine-reputation-management/"
+                                                                <a href=""
                                                                    class="theme_button inverse color2 read-more">More</a>
                                                             </div><!-- eof .item-content -->
                                                         </div><!-- eof .teaser -->    </div>
@@ -307,19 +318,21 @@
                                                         <div class="service_item vertical-item content-padding big-padding with_background text-center overflow-hidden">
                                                             <div class="service_icon">
                                                                 <a class="permalink"
-                                                                   href="http://webdesign-finder.com/hi5clive/service/website-building/">
-                                                                    <img th:src="@{/images/service_icon_5.png}" alt=""> </a>
+                                                                   href="">
+                                                                    <img th:src="@{/images/service_icon_5.png}" alt="">
+                                                                </a>
                                                             </div>
                                                             <div class="item-content">
                                                                 <h5 class="entry-title">
-                                                                    <a href="http://webdesign-finder.com/hi5clive/service/website-building/">
+                                                                    <a href="">
                                                                         Website Building </a>
                                                                 </h5>
                                                                 <div class="excerpt">
-                                                                    <p>Duo ex veri aliquando, no pri disputationi signiferumque,
+                                                                    <p>Duo ex veri aliquando, no pri disputationi
+                                                                        signiferumque,
                                                                         commodo feugiat. </p>
                                                                 </div>
-                                                                <a href="http://webdesign-finder.com/hi5clive/service/website-building/"
+                                                                <a href=""
                                                                    class="theme_button inverse color2 read-more">More</a>
                                                             </div><!-- eof .item-content -->
                                                         </div><!-- eof .teaser -->    </div>
@@ -329,19 +342,21 @@
                                                         <div class="service_item vertical-item content-padding big-padding with_background text-center overflow-hidden">
                                                             <div class="service_icon">
                                                                 <a class="permalink"
-                                                                   href="http://webdesign-finder.com/hi5clive/service/brand-management/">
-                                                                    <img th:src="@{/images/service_icon_6.png}" alt=""> </a>
+                                                                   href="">
+                                                                    <img th:src="@{/images/service_icon_6.png}" alt="">
+                                                                </a>
                                                             </div>
                                                             <div class="item-content">
                                                                 <h5 class="entry-title">
-                                                                    <a href="http://webdesign-finder.com/hi5clive/service/brand-management/">
+                                                                    <a href="">
                                                                         Brand Management </a>
                                                                 </h5>
                                                                 <div class="excerpt">
-                                                                    <p>Accusamus similique ius te. Augue errem gubergren ei has,
+                                                                    <p>Accusamus similique ius te. Augue errem gubergren
+                                                                        ei has,
                                                                         quando amet ceteros.</p>
                                                                 </div>
-                                                                <a href="http://webdesign-finder.com/hi5clive/service/brand-management/"
+                                                                <a href=""
                                                                    class="theme_button inverse color2 read-more">More</a>
                                                             </div><!-- eof .item-content -->
                                                         </div><!-- eof .teaser -->    </div>
@@ -351,12 +366,13 @@
                                                         <div class="service_item vertical-item content-padding big-padding with_background text-center overflow-hidden">
                                                             <div class="service_icon">
                                                                 <a class="permalink"
-                                                                   href="http://webdesign-finder.com/hi5clive/service/explore/">
-                                                                    <img th:src="@{/images/service_icon_1.png}" alt=""> </a>
+                                                                   href="">
+                                                                    <img th:src="@{/images/service_icon_1.png}" alt="">
+                                                                </a>
                                                             </div>
                                                             <div class="item-content">
                                                                 <h5 class="entry-title">
-                                                                    <a href="http://webdesign-finder.com/hi5clive/service/explore/">
+                                                                    <a href="">
                                                                         Explore </a>
                                                                 </h5>
                                                                 <div class="excerpt">
@@ -364,7 +380,7 @@
                                                                         Product Strategy<br>
                                                                         UX Strategy</p>
                                                                 </div>
-                                                                <a href="http://webdesign-finder.com/hi5clive/service/explore/"
+                                                                <a href=""
                                                                    class="theme_button inverse color2 read-more">More</a>
                                                             </div><!-- eof .item-content -->
                                                         </div><!-- eof .teaser -->    </div>
@@ -374,12 +390,13 @@
                                                         <div class="service_item vertical-item content-padding big-padding with_background text-center overflow-hidden">
                                                             <div class="service_icon">
                                                                 <a class="permalink"
-                                                                   href="http://webdesign-finder.com/hi5clive/service/create/">
-                                                                    <img th:src="@{/images/service_icon_2.png}" alt=""> </a>
+                                                                   href="">
+                                                                    <img th:src="@{/images/service_icon_2.png}" alt="">
+                                                                </a>
                                                             </div>
                                                             <div class="item-content">
                                                                 <h5 class="entry-title">
-                                                                    <a href="http://webdesign-finder.com/hi5clive/service/create/">
+                                                                    <a href="">
                                                                         Create </a>
                                                                 </h5>
                                                                 <div class="excerpt">
@@ -387,7 +404,7 @@
                                                                         UX/UI Design<br>
                                                                         Branding</p>
                                                                 </div>
-                                                                <a href="http://webdesign-finder.com/hi5clive/service/create/"
+                                                                <a href=""
                                                                    class="theme_button inverse color2 read-more">More</a>
                                                             </div><!-- eof .item-content -->
                                                         </div><!-- eof .teaser -->    </div>
@@ -397,8 +414,9 @@
                                                         <div class="service_item vertical-item content-padding big-padding with_background text-center overflow-hidden">
                                                             <div class="service_icon">
                                                                 <a class="permalink"
-                                                                   href="http://webdesign-finder.com/hi5clive/service/learn/">
-                                                                    <img th:src="@{/images/service_icon_3.png}" alt=""> </a>
+                                                                   href="">
+                                                                    <img th:src="@{/images/service_icon_3.png}" alt="">
+                                                                </a>
                                                             </div>
                                                             <div class="item-content">
                                                                 <h5 class="entry-title">
@@ -421,7 +439,8 @@
                                                             <div class="service_icon">
                                                                 <a class="permalink"
                                                                    href="http://webdesign-finder.com/hi5clive/service/search-engine-optimisation/">
-                                                                    <img th:src="@{/images/service_icon_1.png}" alt=""> </a>
+                                                                    <img th:src="@{/images/service_icon_1.png}" alt="">
+                                                                </a>
                                                             </div>
                                                             <div class="item-content">
                                                                 <h5 class="entry-title">
@@ -429,7 +448,8 @@
                                                                         Search Engine Optimisation </a>
                                                                 </h5>
                                                                 <div class="excerpt">
-                                                                    <p>Duo magna harum ei. Eu principes interesset vix, ad sea
+                                                                    <p>Duo magna harum ei. Eu principes interesset vix,
+                                                                        ad sea
                                                                         tale vidit. </p>
                                                                 </div>
                                                                 <a href="http://webdesign-finder.com/hi5clive/service/search-engine-optimisation/"
@@ -443,7 +463,8 @@
                                                             <div class="service_icon">
                                                                 <a class="permalink"
                                                                    href="http://webdesign-finder.com/hi5clive/service/digital-marketing/">
-                                                                    <img th:src="@{/images/service_icon_2.png}" alt=""> </a>
+                                                                    <img th:src="@{/images/service_icon_2.png}" alt="">
+                                                                </a>
                                                             </div>
                                                             <div class="item-content">
                                                                 <h5 class="entry-title">
@@ -451,7 +472,8 @@
                                                                         Digital Marketing </a>
                                                                 </h5>
                                                                 <div class="excerpt">
-                                                                    <p>Ut agam scriptorem contentiones per, quo laoreet invidunt
+                                                                    <p>Ut agam scriptorem contentiones per, quo laoreet
+                                                                        invidunt
                                                                         no.</p>
                                                                 </div>
                                                                 <a href="http://webdesign-finder.com/hi5clive/service/digital-marketing/"
@@ -465,7 +487,8 @@
                                                             <div class="service_icon">
                                                                 <a class="permalink"
                                                                    href="http://webdesign-finder.com/hi5clive/service/social-media-marketing/">
-                                                                    <img th:src="@{/images/service_icon_3.png}" alt=""> </a>
+                                                                    <img th:src="@{/images/service_icon_3.png}" alt="">
+                                                                </a>
                                                             </div>
                                                             <div class="item-content">
                                                                 <h5 class="entry-title">
@@ -487,7 +510,8 @@
                                                             <div class="service_icon">
                                                                 <a class="permalink"
                                                                    href="http://webdesign-finder.com/hi5clive/service/search-engine-reputation-management/">
-                                                                    <img th:src="@{/images/service_icon_4.png}" alt=""> </a>
+                                                                    <img th:src="@{/images/service_icon_4.png}" alt="">
+                                                                </a>
                                                             </div>
                                                             <div class="item-content">
                                                                 <h5 class="entry-title">
@@ -495,7 +519,8 @@
                                                                         SER Management </a>
                                                                 </h5>
                                                                 <div class="excerpt">
-                                                                    <p>Ex his vero perpetua, cu est inimicus accusamus, ut porro
+                                                                    <p>Ex his vero perpetua, cu est inimicus accusamus,
+                                                                        ut porro
                                                                         harum populo.</p>
                                                                 </div>
                                                                 <a href="http://webdesign-finder.com/hi5clive/service/search-engine-reputation-management/"
@@ -509,7 +534,8 @@
                                                             <div class="service_icon">
                                                                 <a class="permalink"
                                                                    href="http://webdesign-finder.com/hi5clive/service/website-building/">
-                                                                    <img th:src="@{/images/service_icon_5.png}" alt=""> </a>
+                                                                    <img th:src="@{/images/service_icon_5.png}" alt="">
+                                                                </a>
                                                             </div>
                                                             <div class="item-content">
                                                                 <h5 class="entry-title">
@@ -517,7 +543,8 @@
                                                                         Website Building </a>
                                                                 </h5>
                                                                 <div class="excerpt">
-                                                                    <p>Duo ex veri aliquando, no pri disputationi signiferumque,
+                                                                    <p>Duo ex veri aliquando, no pri disputationi
+                                                                        signiferumque,
                                                                         commodo feugiat. </p>
                                                                 </div>
                                                                 <a href="http://webdesign-finder.com/hi5clive/service/website-building/"
@@ -531,7 +558,8 @@
                                                             <div class="service_icon">
                                                                 <a class="permalink"
                                                                    href="http://webdesign-finder.com/hi5clive/service/brand-management/">
-                                                                    <img th:src="@{/images/service_icon_6.png}" alt=""> </a>
+                                                                    <img th:src="@{/images/service_icon_6.png}" alt="">
+                                                                </a>
                                                             </div>
                                                             <div class="item-content">
                                                                 <h5 class="entry-title">
@@ -539,7 +567,8 @@
                                                                         Brand Management </a>
                                                                 </h5>
                                                                 <div class="excerpt">
-                                                                    <p>Accusamus similique ius te. Augue errem gubergren ei has,
+                                                                    <p>Accusamus similique ius te. Augue errem gubergren
+                                                                        ei has,
                                                                         quando amet ceteros.</p>
                                                                 </div>
                                                                 <a href="http://webdesign-finder.com/hi5clive/service/brand-management/"
@@ -553,7 +582,8 @@
                                                             <div class="service_icon">
                                                                 <a class="permalink"
                                                                    href="http://webdesign-finder.com/hi5clive/service/explore/">
-                                                                    <img th:src="@{/images/service_icon_1.png}" alt=""> </a>
+                                                                    <img th:src="@{/images/service_icon_1.png}" alt="">
+                                                                </a>
                                                             </div>
                                                             <div class="item-content">
                                                                 <h5 class="entry-title">
@@ -565,7 +595,7 @@
                                                                         Product Strategy<br>
                                                                         UX Strategy</p>
                                                                 </div>
-                                                                <a href="http://webdesign-finder.com/hi5clive/service/explore/"
+                                                                <a href=""
                                                                    class="theme_button inverse color2 read-more">More</a>
                                                             </div><!-- eof .item-content -->
                                                         </div><!-- eof .teaser -->    </div>
@@ -575,12 +605,13 @@
                                                         <div class="service_item vertical-item content-padding big-padding with_background text-center overflow-hidden">
                                                             <div class="service_icon">
                                                                 <a class="permalink"
-                                                                   href="http://webdesign-finder.com/hi5clive/service/create/">
-                                                                    <img th:src="@{/images/service_icon_2.png}" alt=""> </a>
+                                                                   href="">
+                                                                    <img th:src="@{/images/service_icon_2.png}" alt="">
+                                                                </a>
                                                             </div>
                                                             <div class="item-content">
                                                                 <h5 class="entry-title">
-                                                                    <a href="http://webdesign-finder.com/hi5clive/service/create/">
+                                                                    <a href="">
                                                                         Create </a>
                                                                 </h5>
                                                                 <div class="excerpt">
@@ -588,7 +619,7 @@
                                                                         UX/UI Design<br>
                                                                         Branding</p>
                                                                 </div>
-                                                                <a href="http://webdesign-finder.com/hi5clive/service/create/"
+                                                                <a href=""
                                                                    class="theme_button inverse color2 read-more">More</a>
                                                             </div><!-- eof .item-content -->
                                                         </div><!-- eof .teaser -->    </div>
@@ -598,12 +629,13 @@
                                                         <div class="service_item vertical-item content-padding big-padding with_background text-center overflow-hidden">
                                                             <div class="service_icon">
                                                                 <a class="permalink"
-                                                                   href="http://webdesign-finder.com/hi5clive/service/learn/">
-                                                                    <img th:src="@{/images/service_icon_3.png}" alt=""> </a>
+                                                                   href="">
+                                                                    <img th:src="@{/images/service_icon_3.png}" alt="">
+                                                                </a>
                                                             </div>
                                                             <div class="item-content">
                                                                 <h5 class="entry-title">
-                                                                    <a href="http://webdesign-finder.com/hi5clive/service/learn/">
+                                                                    <a href="">
                                                                         Learn </a>
                                                                 </h5>
                                                                 <div class="excerpt">
@@ -611,7 +643,7 @@
                                                                         User Testing<br>
                                                                         Learning</p>
                                                                 </div>
-                                                                <a href="http://webdesign-finder.com/hi5clive/service/learn/"
+                                                                <a href="">
                                                                    class="theme_button inverse color2 read-more">More</a>
                                                             </div><!-- eof .item-content -->
                                                         </div><!-- eof .teaser -->    </div>
@@ -621,19 +653,21 @@
                                                         <div class="service_item vertical-item content-padding big-padding with_background text-center overflow-hidden">
                                                             <div class="service_icon">
                                                                 <a class="permalink"
-                                                                   href="http://webdesign-finder.com/hi5clive/service/search-engine-optimisation/">
-                                                                    <img th:src="@{/images/service_icon_1.png}" alt=""> </a>
+                                                                   href="">
+                                                                    <img th:src="@{/images/service_icon_1.png}" alt="">
+                                                                </a>
                                                             </div>
                                                             <div class="item-content">
                                                                 <h5 class="entry-title">
-                                                                    <a href="http://webdesign-finder.com/hi5clive/service/search-engine-optimisation/">
+                                                                    <a href="">
                                                                         Search Engine Optimisation </a>
                                                                 </h5>
                                                                 <div class="excerpt">
-                                                                    <p>Duo magna harum ei. Eu principes interesset vix, ad sea
+                                                                    <p>Duo magna harum ei. Eu principes interesset vix,
+                                                                        ad sea
                                                                         tale vidit. </p>
                                                                 </div>
-                                                                <a href="http://webdesign-finder.com/hi5clive/service/search-engine-optimisation/"
+                                                                <a href=""
                                                                    class="theme_button inverse color2 read-more">More</a>
                                                             </div><!-- eof .item-content -->
                                                         </div><!-- eof .teaser -->    </div>
@@ -643,19 +677,21 @@
                                                         <div class="service_item vertical-item content-padding big-padding with_background text-center overflow-hidden">
                                                             <div class="service_icon">
                                                                 <a class="permalink"
-                                                                   href="http://webdesign-finder.com/hi5clive/service/digital-marketing/">
-                                                                    <img th:src="@{/images/service_icon_2.png}" alt=""> </a>
+                                                                   href="">
+                                                                    <img th:src="@{/images/service_icon_2.png}" alt="">
+                                                                </a>
                                                             </div>
                                                             <div class="item-content">
                                                                 <h5 class="entry-title">
-                                                                    <a href="http://webdesign-finder.com/hi5clive/service/digital-marketing/">
+                                                                    <a href="">
                                                                         Digital Marketing </a>
                                                                 </h5>
                                                                 <div class="excerpt">
-                                                                    <p>Ut agam scriptorem contentiones per, quo laoreet invidunt
+                                                                    <p>Ut agam scriptorem contentiones per, quo laoreet
+                                                                        invidunt
                                                                         no.</p>
                                                                 </div>
-                                                                <a href="http://webdesign-finder.com/hi5clive/service/digital-marketing/"
+                                                                <a href=""
                                                                    class="theme_button inverse color2 read-more">More</a>
                                                             </div><!-- eof .item-content -->
                                                         </div><!-- eof .teaser -->    </div>

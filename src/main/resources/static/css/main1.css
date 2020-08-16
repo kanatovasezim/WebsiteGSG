@@ -23,12 +23,12 @@ Background color for dark muted section (.ds.ms): #fbc817
 Border colors for elements in light section (and .bordered elements): #e1e1e1, rgba(0, 0, 0, 0.1)
 Background color for elements in light section (.hero-bg): #f5f5f5
 
-Dark section (.ds) colors: 
+Dark section (.ds) colors:
 Text color in dark section: #9a9a9a
 Border colors for elements in dark section: #454545
 Background color for elements in dark section (.hero-bg): rgba(255, 255, 255, 0.05)
 
-Color section (.cs) colors: 
+Color section (.cs) colors:
 Background color for elements in color section: rgba(255, 255, 255, 0.1)
 Border color for elements in color section: rgba(255, 255, 255, 0.15)
 
@@ -2741,7 +2741,7 @@ html[xmlns] .slides {
 
 */
 /*
-	
+
 	1. Buttons
 
  */
@@ -3033,7 +3033,7 @@ a.pswp__share--download:hover {
 }
 
 /*
-	
+
 	4. Caption
 
  */
@@ -3224,7 +3224,7 @@ a.pswp__share--download:hover {
 }
 
 /*
-	
+
 	6. Additional styles
 
  */
@@ -3375,8 +3375,8 @@ a.pswp__share--download:hover {
 	margin-top: 0;
 }
 
-/* 
-** Time Table 
+/*
+** Time Table
 */
 #timetable span {
 	display: block;
@@ -3414,7 +3414,7 @@ a.pswp__share--download:hover {
 	color: #fff;
 }
 
-/* 
+/*
 ** toTop
 */
 #toTop {
@@ -7082,7 +7082,7 @@ img {
 
 .s-overlay.ds:before {
 	background-color: #fbc817;
-	opacity: 0.6;
+	opacity: 0.5;
 }
 
 .s-overlay.ds.z-5:before {
@@ -8481,7 +8481,7 @@ body.boxed {
 }
 
 .ds * .ds {
-	background-color: #1a212c;
+	background-color: #fbc817;
 }
 
 /* dark background section - .ds.ms */
@@ -15852,7 +15852,7 @@ a img.aligncenter {
 	}
 
 	.ds .sf-menu > li > a {
-		color: #fff;
+		color: #2b3b55;
 	}
 
 	.ds .sf-menu > li > a:hover,
@@ -17494,7 +17494,7 @@ body.active-side-header.slide-right .page_header_side {
 	}
 }
 
-/* 
+/*
 ** Intro Section Styles
 */
 .page_slider {
@@ -19324,7 +19324,7 @@ h4.entry-title {
 	}
 }
 
-/* 
+/*
 ** Template Specific Styles
 */
 #box_wrapper > section,
@@ -19657,7 +19657,7 @@ img.absolute_image {
 
 .page_footer h4.back {
 	color: #1b222e;
-	font-size: 240px;
+	font-size: 150px;
 	font-weight: 900;
 	left: 50%;
 	line-height: 240px;
@@ -19894,3 +19894,6 @@ img.absolute_image {
 	-webkit-transform: scale(1);
 	transform: scale(1);
 }
+
+/**/
+
