@@ -14,9 +14,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-
-    <div th:if="${about == true}" th:replace="website/js-css-fragments/about-header::about-header"></div>
-
     <link rel="stylesheet" th:href="@{/css/bootstrap.min.css}">
     <link rel="stylesheet" th:href="@{/css/animations.css}">
     <link rel="stylesheet" th:href="@{/css/font-awesome.css}">
@@ -38,8 +35,6 @@
             </div>
         </div>
     </div>
-
-    <div th:if="${about == true}" th:replace="website/js-css-fragments/about-footer::about-footer"></div>
 
     <script type="text/javascript" th:src="@{/js/compressed.js}"></script>
     <script type="text/javascript" th:src="@{/js/main.js}"></script>
