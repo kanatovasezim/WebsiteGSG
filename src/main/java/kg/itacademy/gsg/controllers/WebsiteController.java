@@ -1,6 +1,7 @@
 package kg.itacademy.gsg.controllers;
 
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
@@ -21,7 +22,8 @@ public class WebsiteController {
         return "website/main/home";
     }
     @GetMapping(value = "/about")
-    public String about() {
+    public String about(Model model) {
+        model.addAttribute("about", true);
         return "website/aboutUs/about";
     }
     @GetMapping(value = "/service")

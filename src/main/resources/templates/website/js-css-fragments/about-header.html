@@ -1,0 +1,189 @@
+<div
+        lang="en"
+        xmlns="http://www.w3.org/1999/xhtml"
+        xmlns:th="http://www.thymeleaf.org">
+    <div th:fragment="about-header">
+        <link href="/images/gsg.png" rel="icon">
+        <title>Good Solutions Group</title>
+        <link rel="dns-prefetch" href="http://fonts.googleapis.com/">
+        <link rel="dns-prefetch" href="http://s.w.org/">
+        <script type="text/javascript">
+            window._wpemojiSettings = {
+                "baseUrl": "https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/72x72\/",
+                "ext": ".png",
+                "svgUrl": "https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/svg\/",
+                "svgExt": ".svg",
+                "source": {"concatemoji": "http:\/\/webdesign-finder.com\/hi5clive\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.2.7"}
+            };
+            !function (a, b, c) {
+                function d(a, b) {
+                    var c = String.fromCharCode;
+                    l.clearRect(0, 0, k.width, k.height), l.fillText(c.apply(this, a), 0, 0);
+                    var d = k.toDataURL();
+                    l.clearRect(0, 0, k.width, k.height), l.fillText(c.apply(this, b), 0, 0);
+                    var e = k.toDataURL();
+                    return d === e
+                }
+
+                function e(a) {
+                    var b;
+                    if (!l || !l.fillText) return !1;
+                    switch (l.textBaseline = "top", l.font = "600 32px Arial", a) {
+                        case"flag":
+                            return !(b = d([55356, 56826, 55356, 56819], [55356, 56826, 8203, 55356, 56819])) && (b = d([55356, 57332, 56128, 56423, 56128, 56418, 56128, 56421, 56128, 56430, 56128, 56423, 56128, 56447], [55356, 57332, 8203, 56128, 56423, 8203, 56128, 56418, 8203, 56128, 56421, 8203, 56128, 56430, 8203, 56128, 56423, 8203, 56128, 56447]), !b);
+                        case"emoji":
+                            return b = d([55357, 56424, 55356, 57342, 8205, 55358, 56605, 8205, 55357, 56424, 55356, 57340], [55357, 56424, 55356, 57342, 8203, 55358, 56605, 8203, 55357, 56424, 55356, 57340]), !b
+                    }
+                    return !1
+                }
+
+                function f(a) {
+                    var c = b.createElement("script");
+                    c.src = a, c.defer = c.type = "text/javascript", b.getElementsByTagName("head")[0].appendChild(c)
+                }
+
+                var g, h, i, j, k = b.createElement("canvas"), l = k.getContext && k.getContext("2d");
+                for (j = Array("flag", "emoji"), c.supports = {
+                    everything: !0,
+                    everythingExceptFlag: !0
+                }, i = 0; i < j.length; i++) c.supports[j[i]] = e(j[i]), c.supports.everything = c.supports.everything && c.supports[j[i]], "flag" !== j[i] && (c.supports.everythingExceptFlag = c.supports.everythingExceptFlag && c.supports[j[i]]);
+                c.supports.everythingExceptFlag = c.supports.everythingExceptFlag && !c.supports.flag, c.DOMReady = !1, c.readyCallback = function () {
+                    c.DOMReady = !0
+                }, c.supports.everything || (h = function () {
+                    c.readyCallback()
+                }, b.addEventListener ? (b.addEventListener("DOMContentLoaded", h, !1), a.addEventListener("load", h, !1)) : (a.attachEvent("onload", h), b.attachEvent("onreadystatechange", function () {
+                    "complete" === b.readyState && c.readyCallback()
+                })), g = c.source || {}, g.concatemoji ? f(g.concatemoji) : g.wpemoji && g.twemoji && (f(g.twemoji), f(g.wpemoji)))
+            }(window, document, window._wpemojiSettings);
+        </script>
+        <script type="text/javascript" th:src="@{/js/wp-emoji-release.min.js}" defer=""></script>
+        <style type="text/css">
+            img.wp-smiley,
+            img.emoji {
+                display: inline !important;
+                border: none !important;
+                box-shadow: none !important;
+                height: 1em !important;
+                width: 1em !important;
+                margin: 0 .07em !important;
+                vertical-align: -0.1em !important;
+                background: none !important;
+                padding: 0 !important;
+            }
+        </style>
+        <link rel="stylesheet" id="wp-block-library-css" th:href="@{/css/style.min.css}" type="text/css" media="all">
+        <link rel="stylesheet" id="sb_instagram_styles-css" th:href="@{/css/sb-instagram.min.css}" type="text/css"
+              media="all">
+        <link rel="stylesheet" id="rs-plugin-settings-css" th:href="@{/css/settings.css}" type="text/css" media="all">
+        <style id="rs-plugin-settings-inline-css" type="text/css">
+            #rs-demo-id {
+            }
+        </style>
+        <link rel="stylesheet" id="font-awesome-css" th:href="@{/css/font-awesome.min.css}" type="text/css" media="all">
+        <link rel="stylesheet" id="hi5clive-icon-fonts-css" th:href="@{/css/fonts.css}" type="text/css" media="all">
+        <link rel="stylesheet" id="hi5clive-font-css" th:href="@{/css/css.css}" type="text/css" media="all">
+        <link rel="stylesheet" id="hi5clive-accesspress-css" th:href="@{/css/accesspress.css}" type="text/css" media="all">
+        <link rel="stylesheet" id="hi5clive-css-style-css" th:href="@{/css/style.css}" type="text/css" media="all">
+        <link rel="stylesheet" id="bootstrap-css" th:href="@{/css/bootstrap.min.css}" type="text/css" media="all">
+        <link rel="stylesheet" id="hi5clive-animations-css" th:href="@{/css/animations.css}" type="text/css" media="all">
+        <link rel="stylesheet" id="hi5clive-main-css" th:href="@{/css/mainAbout.css}" type="text/css" media="all">
+        <style id="hi5clive-main-inline-css" type="text/css">
+            #section-77915c4.fw-main-row {
+                background-color: #ffb820;
+            }
+
+
+            #section-c66129d.fw-main-row {
+                background-color: #ffb820;
+            }
+
+            #section-c66129d.fw-main-row {
+                background-image: url("http://webdesign-finder.com/hi5clive/wp-content/uploads/2018/10/section_bg.jpg");
+            }
+
+            #section-5366184.fw-main-row {
+                background-color: #ffb820;
+            }
+
+        </style>
+        <link rel="stylesheet" id="fw-shortcode-divider-css" th:href="@{/css/styles.css}" type="text/css" media="all">
+        <script type="text/javascript" th:src="@{/js/jquery.js}"></script>
+        <script type="text/javascript" th:src="@{/js/jquery-migrate.min.js}"></script>
+        <script type="text/javascript" th:src="@{/js/jquery.themepunch.tools.min.js}"></script>
+        <script type="text/javascript" th:src="@{/js/jquery.themepunch.revolution.min.js}"></script>
+        <script type="text/javascript">
+            /* <![CDATA[ */
+            var SnazzyDataForSnazzyMaps = [];
+            SnazzyDataForSnazzyMaps = {
+                "id": 151,
+                "name": "Ultra Light with Labels",
+                "description": "Light Rust",
+                "url": "https:\/\/snazzymaps.com\/style\/151\/ultra-light-with-labels",
+                "imageUrl": "https:\/\/snazzy-maps-cdn.azureedge.net\/assets\/151-ultra-light-with-labels.png?v=20170626083737",
+                "json": "[{\"featureType\":\"water\",\"elementType\":\"geometry\",\"stylers\":[{\"color\":\"#e9e9e9\"},{\"lightness\":17}]},{\"featureType\":\"landscape\",\"elementType\":\"geometry\",\"stylers\":[{\"color\":\"#f5f5f5\"},{\"lightness\":20}]},{\"featureType\":\"road.highway\",\"elementType\":\"geometry.fill\",\"stylers\":[{\"color\":\"#ffffff\"},{\"lightness\":17}]},{\"featureType\":\"road.highway\",\"elementType\":\"geometry.stroke\",\"stylers\":[{\"color\":\"#ffffff\"},{\"lightness\":29},{\"weight\":0.2}]},{\"featureType\":\"road.arterial\",\"elementType\":\"geometry\",\"stylers\":[{\"color\":\"#ffffff\"},{\"lightness\":18}]},{\"featureType\":\"road.local\",\"elementType\":\"geometry\",\"stylers\":[{\"color\":\"#ffffff\"},{\"lightness\":16}]},{\"featureType\":\"poi\",\"elementType\":\"geometry\",\"stylers\":[{\"color\":\"#f5f5f5\"},{\"lightness\":21}]},{\"featureType\":\"poi.park\",\"elementType\":\"geometry\",\"stylers\":[{\"color\":\"#dedede\"},{\"lightness\":21}]},{\"elementType\":\"labels.text.stroke\",\"stylers\":[{\"visibility\":\"on\"},{\"color\":\"#ffffff\"},{\"lightness\":16}]},{\"elementType\":\"labels.text.fill\",\"stylers\":[{\"saturation\":36},{\"color\":\"#333333\"},{\"lightness\":40}]},{\"elementType\":\"labels.icon\",\"stylers\":[{\"visibility\":\"off\"}]},{\"featureType\":\"transit\",\"elementType\":\"geometry\",\"stylers\":[{\"color\":\"#f2f2f2\"},{\"lightness\":19}]},{\"featureType\":\"administrative\",\"elementType\":\"geometry.fill\",\"stylers\":[{\"color\":\"#fefefe\"},{\"lightness\":20}]},{\"featureType\":\"administrative\",\"elementType\":\"geometry.stroke\",\"stylers\":[{\"color\":\"#fefefe\"},{\"lightness\":17},{\"weight\":1.2}]}]",
+                "views": 733070,
+                "favorites": 1897,
+                "createdBy": {"name": "Anonymous", "url": null},
+                "createdOn": "2014-11-04T03:01:33.197",
+                "tags": ["greyscale", "light"],
+                "colors": ["gray", "white"]
+            };
+            /* ]]> */
+        </script>
+        <script type="text/javascript" th:src="@{/js/snazzymaps.js}"></script>
+        <script type="text/javascript" th:src="@{/js/modernizr-custom.js}"></script>
+        <link rel="EditURI" type="application/rsd+xml" title="RSD"
+              href="http://webdesign-finder.com/hi5clive/xmlrpc.php?rsd">
+        <link rel="wlwmanifest" type="application/wlwmanifest+xml"
+              href="http://webdesign-finder.com/hi5clive/wp-includes/wlwmanifest.xml">
+        <meta name="generator" content="WordPress 5.2.7">
+        <link rel="canonical" href="http://webdesign-finder.com/hi5clive/about/">
+        <link rel="shortlink" href="http://webdesign-finder.com/hi5clive/?p=4217">
+        <link rel="alternate" type="application/json+oembed"
+              href="http://webdesign-finder.com/hi5clive/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fwebdesign-finder.com%2Fhi5clive%2Fabout%2F">
+        <link rel="alternate" type="text/xml+oembed"
+              href="http://webdesign-finder.com/hi5clive/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fwebdesign-finder.com%2Fhi5clive%2Fabout%2F&amp;format=xml">
+        <meta name="generator"
+              content="Powered by Slider Revolution 5.4.8.2 - responsive, Mobile-Friendly Slider Plugin for WordPress with comfortable drag and drop interface.">
+        <link rel="icon" href="http://webdesign-finder.com/hi5clive/wp-content/uploads/2018/08/cropped-favicon-150x150.jpg"
+              sizes="32x32">
+        <link rel="icon" href="http://webdesign-finder.com/hi5clive/wp-content/uploads/2018/08/cropped-favicon-300x300.jpg"
+              sizes="192x192">
+        <link rel="apple-touch-icon-precomposed"
+              href="http://webdesign-finder.com/hi5clive/wp-content/uploads/2018/08/cropped-favicon-300x300.jpg">
+        <meta name="msapplication-TileImage"
+              content="http://webdesign-finder.com/hi5clive/wp-content/uploads/2018/08/cropped-favicon-300x300.jpg">
+        <script type="text/javascript">function setREVStartSize(e) {
+            try {
+                e.c = jQuery(e.c);
+                var i = jQuery(window).width(), t = 9999, r = 0, n = 0, l = 0, f = 0, s = 0, h = 0;
+                if (e.responsiveLevels && (jQuery.each(e.responsiveLevels, function (e, f) {
+                    f > i && (t = r = f, l = e), i > f && f > r && (r = f, n = e)
+                }), t > r && (l = n)), f = e.gridheight[l] || e.gridheight[0] || e.gridheight, s = e.gridwidth[l] || e.gridwidth[0] || e.gridwidth, h = i / s, h = h > 1 ? 1 : h, f = Math.round(h * f), "fullscreen" == e.sliderLayout) {
+                    var u = (e.c.width(), jQuery(window).height());
+                    if (void 0 != e.fullScreenOffsetContainer) {
+                        var c = e.fullScreenOffsetContainer.split(",");
+                        if (c) jQuery.each(c, function (e, i) {
+                            u = jQuery(i).length > 0 ? u - jQuery(i).outerHeight(!0) : u
+                        }), e.fullScreenOffset.split("%").length > 1 && void 0 != e.fullScreenOffset && e.fullScreenOffset.length > 0 ? u -= jQuery(window).height() * parseInt(e.fullScreenOffset, 0) / 100 : void 0 != e.fullScreenOffset && e.fullScreenOffset.length > 0 && (u -= parseInt(e.fullScreenOffset, 0))
+                    }
+                    f = u
+                } else void 0 != e.minHeight && f < e.minHeight && (f = e.minHeight);
+                e.c.closest(".rev_slider_wrapper").css({height: f})
+            } catch (d) {
+                console.log("Failure at Presize of Slider:" + d)
+            }
+        };</script>
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+        <link rel="stylesheet" th:href="@{/css/bootstrap.min.css}">
+        <link rel="stylesheet" th:href="@{/css/animations.css}">
+        <link rel="stylesheet" th:href="@{/css/font-awesome.css}">
+        <link rel="stylesheet" th:href="@{/css/main1.css}" class="color-switcher-link">
+        <script th:src="@{/vendor/modernizr-custom.js}"></script>
+        <script th:src="@{/vendor/html5shiv.min.js}"></script>
+        <script th:src="@{/vendor/respond.min.js}"></script>
+        <script th:src="@{/vendor/jquery-1.12.4.min.js}"></script>
+        </div>
+</div>
+
