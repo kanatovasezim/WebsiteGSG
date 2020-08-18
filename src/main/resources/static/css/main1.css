@@ -3427,7 +3427,8 @@ a.pswp__share--download:hover {
 	opacity: 0.7;
 	overflow: hidden;
 	position: fixed;
-	right: 10px;
+	right: 27px;
+	bottom: 35px;
 	text-decoration: none;
 	width: 50px;
 	z-index: 1000;
@@ -3443,7 +3444,8 @@ a.pswp__share--download:hover {
 	left: 0;
 	line-height: 50px;
 	position: absolute;
-	right: 0;
+	right: 27px;
+	bottom: 35px;
 	text-align: center;
 	top: 0;
 	transition: all 0.2s linear;
@@ -19619,7 +19621,7 @@ img.absolute_image {
 }
 
 .menu-footer__nav li a {
-	font-size: 14px;
+	font-size: 13px;
 	font-weight: bold;
 	letter-spacing: 2.8px;
 	line-height: 1;
@@ -19698,11 +19700,11 @@ img.absolute_image {
 
 @media (max-width: 1200px) {
 	.page_footer p.spec {
-		font-size: 80px;
+		font-size: 32px;
 	}
 
 	.page_footer h4.back {
-		font-size: 150px;
+		font-size: 90px;
 	}
 }
 
@@ -19713,11 +19715,11 @@ img.absolute_image {
 	}
 
 	.page_footer p.spec {
-		font-size: 60px;
+		font-size: 32px;
 	}
 
 	.page_footer h4.back {
-		font-size: 100px;
+		font-size: 90px;
 		line-height: 100px;
 	}
 }
@@ -19729,12 +19731,12 @@ img.absolute_image {
 	}
 
 	.page_footer p.spec {
-		font-size: 40px;
+		font-size: 24px;
 		line-height: 40px;
 	}
 
 	.page_footer h4.back {
-		font-size: 80px;
+		font-size: 63px;
 		line-height: 80px;
 	}
 }
