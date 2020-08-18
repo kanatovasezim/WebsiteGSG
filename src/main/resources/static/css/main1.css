@@ -19895,5 +19895,30 @@ img.absolute_image {
 	transform: scale(1);
 }
 
+.service_item {
+	background-color: #2b3b55;
+}
+
+.page_breadcrumbs {
+	padding-top: 270px;
+}
+
+@media (max-width: 1200px) {
+	.page_breadcrumbs {
+		padding-top: 200px;
+	}
+}
+
+@media (max-width: 1000px) {
+	.page_breadcrumbs {
+		padding-top: 160px;
+	}
+}
+
+@media (max-width: 580px) {
+	.page_breadcrumbs {
+		padding-top: 100px;
+	}
+}
 /**/
 
